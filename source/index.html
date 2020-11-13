@@ -41,9 +41,8 @@
       </div>
     </section>
 
-    <section class="services">
+    <section class="services wrapper">
       <h2 class="visually-hidden">Услуги</h2>
-
       <ul class="services__list">
         <li class="services__item services__item--slim">
           <h3 class="services__name">Похудение</h3>
@@ -62,11 +61,9 @@
           <a class="services__link" href="">Каталог Pro</a>
         </li>
       </ul>
-
     </section>
 
-    <section class="work">
-
+    <section class="work wrapper">
       <h2 class="work__title">Как это работает</h2>
       <ul class="work__list">
         <li class="work__item work__item--leaf">
@@ -97,35 +94,33 @@
             Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит
             по 16 часов в день.
           </p>
-          <div class="example__result">
-            <b class="example__weight">5 кг</b>
-            <p>Снижение веса</p>
-          </div>
-          <div class="example__result">
-            <b class="example__days">60 дней</b>
-            <p>Затрачено времени</p>
-          </div>
+          <dl class="example__list">
+            <div class="example__item">
+              <dt class="example__number">5 кг</dt>
+              <dd class="example__text">Снижение веса</dd>
+            </div>
+            <div class="example__item">
+              <dt class="example__number">60 дней</dt>
+              <dd class="example__text">Затрачено времени</dd>
+            </div>
+          </dl>
           <p class="example__costs"><span>Затраты на питание:</span><span>15000 руб.</span></p>
         </div>
         <div class="example__wrapper-right">
           <div class="example__slider-container">
-              <img class="example__image" src="https://via.placeholder.com/150x150" width="150" height="150"
-                alt="Толстый кот">
-              <img class="example__image" src="https://via.placeholder.com/150x150" width="150" height="150"
-                alt="Худой кот">
-                <div class="example__slider">
-                  <div class="example__scale">
-                    <div class="example__bar"></div>
-                  </div>
-                  <!-- <div class="toggle toggle-min" tabindex="0" aria-label="Минимум"></div>
-                  <div class="toggle toggle-max" tabindex="0" aria-label="Максимум"></div> -->
-                </div>
-
-            <!-- <input class="example__slider" type="range" min="1" max="100" value="50"> -->
+            <img class="example__image" src="https://via.placeholder.com/150x150" width="150" height="150"
+              alt="Толстый кот">
+            <img class="example__image" src="https://via.placeholder.com/150x150" width="150" height="150"
+              alt="Худой кот">
+            <div class="example__slider">
+              <div class="example__scale">
+                <div class="example__bar"></div>
+              </div>
+              <div class="example__toggle" aria-label="Ползунок"></div>
+            </div>
           </div>
         </div>
       </div>
-
     </section>
 
     <section class="contacts">
