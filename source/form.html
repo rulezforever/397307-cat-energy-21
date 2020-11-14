@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>Кэт энерджи: Подбор программы</title>
+</head>
+
+<body class="page__body">
+
+  <header class="page-header">
+    <a class="page-header__logo">
+      <img src="https://via.placeholder.com/150x150" width="150" height="150" alt="Логотип Кэт Энерджи">
+    </a>
+    <nav class="main-nav">
+      <button class="main-nav__toggle" type="button" aria-label="Открыть меню"></button>
+      <ul class="main-nav__list">
+        <li class="main-nav__item main-nav__item--active">
+          <a>Главная</a>
+        </li>
+        <li class="main-nav__item">
+          <a href="">Каталог продукции</a>
+        </li>
+        <li class="main-nav__item">
+          <a href="">Подбор программы</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="page-main">
+    <h1 class="page-main__title">Подбор программы</h1>
+    <p class="page-main__text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+
+    <form class="selection" id="selection" method="post" action="https://echo.htmlacademy.ru">
+      <fieldset class="selection__cat">
+        <p class="selection__cat-item">
+          <label class="selection__cat-label" for="cat-name">Имя:*</label>
+          <input class="selection__cat-name" id="cat-name" type="text" name="cat-name" placeholder="Барсик">
+        </p>
+        <p class="selection__cat-item">
+          <label class="selection__cat-label" for="cat-weight">Вес (кг):*</label>
+          <input class="selection__cat-weight" id="cat-weight" type="number" name="cat-weight" placeholder="7">
+        </p>
+        <p class="selection__cat-item">
+          <label class="selection__cat-label" for="cat-age">Возраст (лет):</label>
+          <input class="selection__cat-age" id="cat-age" type="number" name="cat-age" placeholder="7">
+        </p>
+      </fieldset>
+
+      <fieldset class="selection__program">
+        <ul class="selection__program-list">
+          <li class="selection__program-item">
+            <label class="selection__program-label" for="slim">Похудение</label>
+            <input class="selection__program-slim" type="radio" name="program" value="slim" id="slim" checked>
+          </li>
+          <li class="selection__program-item">
+            <label class="selection__program-label" for="weight">Набор массы</label>
+            <input class="selection__program-weight" type="radio" name="program" value="weight" id="weight">
+          </li>
+          <li class="selection__program-item">
+            <label class="selection__program-label" for="advice">Не знаю (нужен ваш совет)</label>
+            <input class="selection__program-advice" type="radio" name="program" value="advice" id="advice">
+          </li>
+        </ul>
+      </fieldset>
+
+      <fieldset class="selection__owner">
+        <legend class="selection__owner-legend">Контактные данные (владельца кота)</legend>
+        <p class="selection__owner-item">
+          <label class="selection__owner-label" for="email">E-mail:*</label>
+          <input class="selection__owner-email" id="email" type="email" name="email" placeholder="kuklachev@gmail.com">
+        </p>
+        <p class="selection__owner-item">
+          <label class="selection__owner-label" for="phone">Телефон:*</label>
+          <input class="selection__owner-phone" id="phone" type="tel" name="phone" placeholder="8 (960) 900-60-90">
+        </p>
+      </fieldset>
+
+      <fieldset class="selection__comment">
+        <legend class="selection__coment-legend">Комментарий</legend>
+        <label class="selection__comment-label visually-hidden" for="comment">Текст комментария:</label>
+        <textarea class="selection__comment-text" id="comment" name="comment"
+          placeholder="Расскажите обо всех повадках кота"></textarea>
+      </fieldset>
+
+      <fieldset class="selection__extra">
+        <legend class="selection__extra-legend">Дополнительно</legend>
+        <ul class="selection__extra-list">
+          <li class="selection__extra-item">
+            <label class="selection__extra-label" for="sweetener">Сахарозаменитель</label>
+            <input class="selection__extra-sweetener" type="checkbox" name="sweetener" id="sweetener" checked>
+          </li>
+          <li class="selection__extra-item">
+            <label class="selection__extra-label" for="water">Питьевая вода</label>
+            <input class="selection__extra-sweetener" type="checkbox" name="water" id="water">
+          </li>
+          <li class="selection__extra-item">
+            <label class="selection__extra-label" for="milk">Молоко</label>
+            <input class="selection__extra-sweetener" type="checkbox" name="milk" id="milk">
+          </li>
+          <li class="selection__extra-item">
+            <label class="selection__extra-label" for="vitamins">Витамины</label>
+            <input class="selection__extra-sweetener" type="checkbox" name="vitamins" id="vitamins">
+          </li>
+        </ul>
+      </fieldset>
+      <button class="selection__button" type="submit">Отправить заявку</button>
+      <p class="selection__small">
+        <small>
+          * — Обязательные поля
+        </small>
+      </p>
+    </form>
+
+    <section class="contacts">
+      <div class="contacts__wrapper">
+        <h2 class="visually-hidden">Контакты</h2>
+        <p class="contacts__invite">Приглашаем к сотрудничеству дилеров!</p>
+        <p class="contacts__invite">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+      </div>
+    </section>
+
+    <div class="map">
+      <img class="contacts__map" src="https://via.placeholder.com/150x150" width="150" height="150"
+        alt="г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
+    </div>
+
+    <footer class="page-footer">
+      <div class="page-footer__wrapper">
+        <a class="page-footer__logo">
+          <img src="https://via.placeholder.com/150x150" width="150" height="150" alt="Логотип Кэт Энерджи">
+        </a>
+        <div class="page-footer__social social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy"
+                aria-label="Вконтакте"></a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy"
+                aria-label="Инстаграм"></a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy"
+                aria-label="Фейсбук"></a>
+            </li>
+          </ul>
+        </div>
+        <div class="page-footer__copyright copyright">
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        </div>
+      </div>
+    </footer>
+
+  </main>
+
+</body>
+
+</html>
