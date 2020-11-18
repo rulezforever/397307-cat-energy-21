@@ -1,0 +1,30 @@
+.contacts {
+  min-height: 114px;
+}
+
+.contacts__wrapper {
+  padding: 10px 20px;
+}
+
+.contacts__invite {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 18px;
+  color: #111111;
+  width: 135px;
+  text-transform: uppercase;
+  display: inline-block;
+}
+
+.contacts__address {
+  font-family: "Arial", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 20px;
+  color: #444444;
+  width: 135px;
+  display: inline-block;
+}

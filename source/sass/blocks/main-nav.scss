@@ -1,6 +1,8 @@
 
 .main-nav__list {
   list-style: none;
+  padding: 0 20px;
+  margin: 0;
 }
 
 .main-nav__item {
@@ -11,4 +13,14 @@
   align-items: center;
   justify-content: center;
   margin: 0;
+}
+
+.main-nav__item a {
+  color: black;
+}
+
+.main-nav__toggle {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
 }

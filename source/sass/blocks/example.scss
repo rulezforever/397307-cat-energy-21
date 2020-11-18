@@ -1,0 +1,75 @@
+.example {
+  font-family: "Arial", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: black;
+  margin: 0;
+  background-color: #eaeaea;
+  min-height: 705px;
+}
+
+.example__wrapper {
+  padding: 27px 20px 20px;
+}
+
+.example__title {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 36px;
+  line-height: 40px;
+  margin: 0;
+}
+
+.example__description {
+  color: #444444;
+  width: 279px;
+  margin-top: 33px;
+}
+
+
+// .example__list {
+
+// }
+
+.example__item {
+  display: inline-block;
+  margin-top: 22px;
+}
+
+.example__number {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.example__text {
+  font-size: 12px;
+  line-height: 12px;
+  text-transform: lowercase;
+  text-align: center;
+  width: 59px;
+}
+
+.example__costs {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+// .example__wrapper-right {
+
+// }
+
+// .example__wrapper-left {
+
+// }

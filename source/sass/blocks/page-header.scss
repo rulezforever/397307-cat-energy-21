@@ -1,5 +1,5 @@
 .page-header {
-  min-width: 320px;
+  max-width: 320px;
   background-color: white;
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: 500;
@@ -8,7 +8,8 @@
   line-height: 20px;
   color: black;
   text-transform: uppercase;
-  padding: 0 auto;
+  padding: 0 20px;
+  margin: 0;
 }
 
 .page-header__logo {
