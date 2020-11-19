@@ -1,0 +1,23 @@
+
+.main-nav__list {
+  @include list-reset;
+  padding: 0 20px;
+}
+
+.main-nav__item {
+  @include center;
+  min-height: 66px;
+  text-align: center;
+  border-bottom: 1px solid $line-grey;
+  margin: 0;
+}
+
+.main-nav__item a {
+  color: $black;
+}
+
+.main-nav__toggle {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+}
