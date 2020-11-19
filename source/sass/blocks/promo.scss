@@ -1,0 +1,35 @@
+.promo {
+  font-family: $primary-font;
+  min-height: 480px;
+}
+
+.promo__wrapper {
+  max-height: 302px;
+  background-color: rgba($bg-green, 0.85);
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.promo__title {
+  @include font-set(36px, 36px, 400);
+  text-align: center;
+  color: $white;
+  padding-top: 27px;
+  margin: 0;
+}
+
+.promo__slogan {
+  @include font-set(14px, 14px, 400);
+  text-align: center;
+  color: $white;
+  text-transform: uppercase;
+  margin-top: 25px;
+}
+
+.promo__link {
+  @include center;
+  width: 280px;
+  min-height: 40px;
+  order: 4;
+}
