@@ -1,6 +1,6 @@
 .page-footer {
   min-height: 236px;
-  background-color: #f2f2f2;
+  background-color: $basic-grey;
 }
 
 .page-footer__wrapper {
@@ -12,7 +12,7 @@
   display: block;
   width: 280px;
   height: 95px;
-  border-bottom: 1px solid #d9d9d9;
+  border-bottom: 1px solid $border-grey;
 }
 
 
@@ -25,5 +25,5 @@
   display: block;
   width: 280px;
   height: 45px;
-  border-bottom: 1px solid #d9d9d9;
+  border-bottom: 1px solid $border-grey;
 }

@@ -1,9 +1,8 @@
 .button {
-  font-family: "Oswald", "Arial", sans-serif;
-  font-size: 14px;
-  line-height: 18px;
+  @include font-set(14px, 18px);
+  font-family: $primary-font;
   text-align: center;
   text-transform: uppercase;
-  background-color: #68b738;
-  color: white;
+  background-color: $basic-green;
+  color: $white;
 }

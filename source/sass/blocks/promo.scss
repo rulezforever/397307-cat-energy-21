@@ -1,42 +1,35 @@
 .promo {
-  font-family: "Oswald", "Arial", sans-serif;
-  width: 320px;
+  font-family: $primary-font;
   min-height: 480px;
 }
 
 .promo__wrapper {
   max-height: 302px;
-  background-color: rgba(104, 183, 56, 0.85);
+  background-color: rgba($bg-green, 0.85);
   padding: 0 20px;
   display: flex;
   flex-direction: column;
 }
 
 .promo__title {
-  font-weight: 400;
-  font-size: 36px;
-  line-height: 36px;
+  @include font-set(36px, 36px, 400);
   text-align: center;
-  color: white;
+  color: $white;
   padding-top: 27px;
   margin: 0;
 }
 
 .promo__slogan {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 14px;
+  @include font-set(14px, 14px, 400);
   text-align: center;
-  color: white;
+  color: $white;
   text-transform: uppercase;
   margin-top: 25px;
 }
 
 .promo__link {
+  @include center;
   width: 280px;
   min-height: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   order: 4;
 }
