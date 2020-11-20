@@ -1,0 +1,16 @@
+// .page-main {
+//   padding: 0 20px 20px;
+// }
+
+.page-main__title {
+  @include font-set(36px, 36px, 400);
+  font-family: $primary-font;
+}
+
+.page-main__text {
+  @include font-set(14px, 18px, 400);
+  font-family: $primary-font;
+  text-transform: uppercase;
+  width: 226px;
+  margin-top: 30px;
+}
