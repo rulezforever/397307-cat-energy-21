@@ -33,11 +33,11 @@
     </nav>
   </header>
 
-  <main class="page-main wrapper">
+  <main class="page-main">
     <h1 class="page-main__title">Подбор программы</h1>
     <p class="page-main__text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
 
-    <form class="order" id="order" method="post" action="https://echo.htmlacademy.ru">
+    <form class="order wrapper" id="order" method="post" action="https://echo.htmlacademy.ru">
       <fieldset class="order__item">
         <p class="order__group">
           <label class="order__input-label" for="cat-name">Имя:<sup>*</sup></label>
@@ -55,7 +55,7 @@
       </fieldset>
 
       <fieldset class="order__item">
-        <ul class="order__list">
+        <ul class="order__list-radio">
           <li class="order__group">
             <input class="order__radio" type="radio" name="program" value="slim" id="slim" checked>
             <label class="order__radio-label" for="slim">Похудение</label>
@@ -94,7 +94,7 @@
 
       <fieldset class="order__item">
         <legend class="order__title">Дополнительно</legend>
-        <ul class="order__list">
+        <ul class="order__list-check">
           <li class="order__group">
             <input class="order__check" type="checkbox" name="sweetener" id="sweetener" checked>
             <label class="order__check-label" for="sweetener">Сахарозаменитель</label>

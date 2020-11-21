@@ -1,10 +1,8 @@
-// .page-main {
-//   padding: 0 20px 20px;
-// }
 
 .page-main__title {
   @include font-set(36px, 36px, 400);
   font-family: $primary-font;
+  margin-left: 20px;
 }
 
 .page-main__text {
@@ -13,4 +11,5 @@
   text-transform: uppercase;
   width: 226px;
   margin-top: 30px;
+  margin-left: 20px;
 }
