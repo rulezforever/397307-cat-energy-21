@@ -38,7 +38,7 @@
     <p class="page-main__text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
 
     <form class="order wrapper" id="order" method="post" action="https://echo.htmlacademy.ru">
-      <fieldset class="order__item">
+      <fieldset class="order__item order__item--cat">
         <p class="order__group">
           <label class="order__input-label" for="cat-name">Имя:<sup>*</sup></label>
           <input class="order__input" id="cat-name" type="text" name="cat-name" placeholder="Барсик" required>
@@ -54,8 +54,8 @@
         </p>
       </fieldset>
 
-      <fieldset class="order__item">
-        <ul class="order__list-radio">
+      <fieldset class="order__item order__item--service">
+        <ul class="order__list order__list--radio">
           <li class="order__group">
             <input class="order__radio" type="radio" name="program" value="slim" id="slim" checked>
             <label class="order__radio-label" for="slim">Похудение</label>
@@ -71,7 +71,7 @@
         </ul>
       </fieldset>
 
-      <fieldset class="order__item">
+      <fieldset class="order__item order__item--owner">
         <legend class="order__title">Контактные данные (владельца кота)</legend>
         <p class="order__group">
           <label class="order__input-label" for="email">E-mail:<sup>*</sup></label>
@@ -85,7 +85,7 @@
         </p>
       </fieldset>
 
-      <fieldset class="order__item">
+      <fieldset class="order__item order__item--comment">
         <legend class="order__title">Комментарий</legend>
         <label class="visually-hidden" for="comment">Текст комментария:</label>
         <textarea class="order__text" id="comment" name="comment"
@@ -94,7 +94,7 @@
 
       <fieldset class="order__item">
         <legend class="order__title">Дополнительно</legend>
-        <ul class="order__list-check">
+        <ul class="order__list">
           <li class="order__group">
             <input class="order__check" type="checkbox" name="sweetener" id="sweetener" checked>
             <label class="order__check-label" for="sweetener">Сахарозаменитель</label>

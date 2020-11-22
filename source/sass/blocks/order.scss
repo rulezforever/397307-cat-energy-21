@@ -3,11 +3,9 @@
   margin-bottom: 12px;
 }
 
-.order__input-label,
-.order__input,
-.order__radio-label,
+.order__group label,
 .order__text,
-.order__check-label {
+.order__input {
   @include font-set(16px, 18px, 400);
   font-family: $primary-font;
   color: $special-dark-grey;
@@ -26,19 +24,19 @@
   border: none;
 }
 
-.order__item:first-of-type {
+.order__item--cat {
   margin-bottom: 16px;
 }
 
-.order__item:nth-of-type(2) {
+.order__item--service {
   margin-bottom: 43px;
 }
 
-.order__item:nth-of-type(3) {
+.order__item--owner {
   margin-bottom: 15px;
 }
 
-.order__item:nth-of-type(4) {
+.order__item--comment {
   margin-bottom: 23px;
 }
 
@@ -60,23 +58,17 @@
   box-sizing: border-box;
 }
 
-
-.order__list-radio {
+.order__list {
   @include list-reset;
-  margin-top: 12px;
 }
 
-.order__list-check {
-  @include list-reset;
+.order__list--radio {
+  margin-top: 12px;
 }
 
 .order__title {
   @include font-set(24px, 26px, 400);
   font-family: $primary-font;
-  margin-left: -2px;
-}
-
-.order__title:nth-of-type(1) {
   margin-bottom: 25px;
 }
 
@@ -84,7 +76,7 @@
   text-align: center;
   padding-top: 10px;
   width: 275px;
-  height: 135px;
+  min-height: 135px;
   margin-top: 15px;
 }
 
@@ -100,9 +92,6 @@
 .order__button {
   @include font-set(16px, 20px, 400);
   @include center;
-  font-family: $primary-font;
-  width: 280px;
-  min-height: 40px;
   margin-top: 29px;
   border: none;
   margin-bottom: 17px;
