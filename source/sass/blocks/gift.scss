@@ -1,0 +1,17 @@
+.gift {
+  height: 289px;
+  background-color: $bg-green;
+  margin-top: 40px;
+  margin-bottom: 38px;
+}
+
+.gift__slogan {
+  @include font-set(16px, 20px, 400);
+  font-family: $secondary-font;
+  color: $white;
+  display: block;
+  width: 161px;
+  text-align: center;
+  padding-top: 186px;
+  margin-left: 78px;
+}
