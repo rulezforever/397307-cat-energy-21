@@ -22,22 +22,22 @@
   margin: 0;
   padding: 0;
   border: none;
-}
 
-.order__item--cat {
-  margin-bottom: 16px;
-}
+  &--cat {
+    margin-bottom: 16px;
+  }
 
-.order__item--service {
-  margin-bottom: 43px;
-}
+  &--service {
+    margin-bottom: 43px;
+  }
 
-.order__item--owner {
-  margin-bottom: 15px;
-}
+  &--owner {
+    margin-bottom: 15px;
+  }
 
-.order__item--comment {
-  margin-bottom: 23px;
+  &--comment {
+    margin-bottom: 23px;
+  }
 }
 
 .order__radio-label {
@@ -60,10 +60,10 @@
 
 .order__list {
   @include list-reset;
-}
 
-.order__list--radio {
-  margin-top: 12px;
+  &--radio {
+    margin-top: 12px;
+  }
 }
 
 .order__title {
@@ -75,7 +75,6 @@
 .order__text {
   text-align: center;
   padding-top: 10px;
-  width: 275px;
   min-height: 135px;
   margin-top: 15px;
 }

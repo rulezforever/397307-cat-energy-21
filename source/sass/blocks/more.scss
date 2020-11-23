@@ -17,9 +17,8 @@
 
 .more__param {
   @include list-reset;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-row: 1fr;
+  display: flex;
+  justify-content: space-between;
   margin-bottom: 15px;
 }
 
