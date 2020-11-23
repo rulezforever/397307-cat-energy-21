@@ -1,5 +1,6 @@
 // Global
 @import "global/variables.scss";
+@import "global/mixins.scss";
 @import "global/fonts.scss";
 @import "global/global.scss";
 
@@ -20,3 +21,8 @@
 @import "blocks/contacts.scss";
 @import "blocks/map.scss";
 @import "blocks/copyright.scss";
+@import "blocks/page-main.scss";
+@import "blocks/order.scss";
+@import "blocks/catalog.scss";
+@import "blocks/more.scss";
+@import "blocks/gift.scss";
