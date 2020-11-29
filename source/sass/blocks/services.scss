@@ -3,18 +3,51 @@
   font-family: $secondary-font;
   font-style: normal;
   color: $black;
+
+  @media (min-width: $tablet-width) {
+    width: 708px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1440px;
+  }
 }
 
 .services__list {
   @include list-reset;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 22px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 80px;
+  }
 }
 
 .services__item {
   min-height: 266px;
   background-color: $basic-grey;
   padding: 0 20px;
-  margin: 0;
-  margin-top: 24px;
+  // margin: 0;
+  // margin-top: 24px;
+
+
+  @media (min-width: $tablet-width) {
+    min-height: 372px;
+    padding: 0 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 570px;
+    min-height: 374px;
+  }
 }
 
 .services__name {
@@ -26,6 +59,12 @@
   text-align: center;
   margin: 0;
   padding-top: 30px;
+
+  @media (min-width: $tablet-width) {
+    @include font-set(36px, 36px);
+    text-align: left;
+    margin-top: 45px;
+  }
 }
 
 .services__description {
@@ -34,6 +73,13 @@
   padding-bottom: 23px;
   border-bottom: 1px solid $border-grey;
   margin-top: 29px;
+
+  @media (min-width: $tablet-width) {
+    @include font-set(16px, 24px);
+    border: none;
+    width: 377px;
+    padding-bottom: 32px;
+  }
 }
 
 .services__link {
@@ -42,4 +88,8 @@
   font-style: normal;
   color: $black;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    @include font-set(20px, 30px);
+  }
 }

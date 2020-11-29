@@ -2,6 +2,15 @@
 .main-nav__list {
   @include list-reset;
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 440px;
+    min-height: 36px;
+  }
 }
 
 .main-nav__item {
@@ -10,14 +19,36 @@
   text-align: center;
   border-bottom: 1px solid $line-grey;
   margin: 0;
+
+  &--active {
+    @media (min-width: $tablet-width) {
+      border-bottom: 2px solid $basic-font;
+    }
+
+    @media (min-width: $desktop-width) {
+      border-bottom: 2px solid $white;
+    }
+  }
 }
 
 .main-nav__item a {
   color: $black;
+
+  @media (min-width: $tablet-width) {
+    @include font-set(18px, 24px, 400);
+  }
+
+  @media (min-width: $desktop-width) {
+    color: $white;
+  }
 }
 
 .main-nav__toggle {
   display: inline-block;
   width: 18px;
   height: 18px;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }

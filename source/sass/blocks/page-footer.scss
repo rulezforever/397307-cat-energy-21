@@ -1,11 +1,32 @@
 .page-footer {
   min-height: 236px;
   background-color: $basic-grey;
+
+  @media (min-width: $tablet-width) {
+    min-height: 150px;
+    width: 768px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1440px;
+  }
 }
 
 .page-footer__wrapper {
   padding: 0 20px;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+    padding: 0 110px;
+  }
 }
 
 .page-footer__logo {
@@ -13,6 +34,10 @@
   width: 280px;
   height: 95px;
   border-bottom: 1px solid $border-grey;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+  }
 }
 
 
@@ -26,4 +51,8 @@
   width: 280px;
   height: 45px;
   border-bottom: 1px solid $border-grey;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+  }
 }

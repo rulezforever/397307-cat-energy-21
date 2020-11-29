@@ -4,6 +4,16 @@
 
 .contacts__wrapper {
   padding: 10px 20px;
+
+  @media (min-width: $tablet-width) {
+    width: 708px;
+    padding: 10px 72px;
+    min-height: 181px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 570px;
+  }
 }
 
 .contacts__invite {
@@ -14,6 +24,12 @@
   width: 135px;
   text-transform: uppercase;
   display: inline-block;
+
+  @media (min-width: $tablet-width) {
+    @include font-set(20px, 21px);
+    width: 171px;
+    margin-top: 60px;
+  }
 }
 
 .contacts__address {
@@ -23,4 +39,11 @@
   color: $special-dark-grey;
   width: 135px;
   display: inline-block;
+
+  @media (min-width: $tablet-width) {
+    @include font-set(16px, 20px);
+    text-align: right;
+    width: 160px;
+    margin-left: 350px;
+  }
 }
