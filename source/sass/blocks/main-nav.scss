@@ -7,9 +7,17 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    flex-direction: row;
     width: 440px;
     min-height: 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 50px;
+    width: 475px;
+    background-color: $bg-green;
   }
 }
 
@@ -19,6 +27,14 @@
   text-align: center;
   border-bottom: 1px solid $line-grey;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    border: none;
+  }
 
   &--active {
     @media (min-width: $tablet-width) {
@@ -39,6 +55,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    @include font-set(20px, 30px, 400);
     color: $white;
   }
 }

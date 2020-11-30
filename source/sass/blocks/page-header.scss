@@ -19,9 +19,14 @@
   @media (min-width: $desktop-width) {
     width: 1220px;
     padding: 0 110px;
+    min-height: 130px;
   }
 }
 
 .page-header__logo {
   background-color: $white;
+
+  @media (min-width: $desktop-width) {
+    margin-top: 50px;
+  }
 }

@@ -1,8 +1,6 @@
 .promo {
   font-family: $primary-font;
   min-height: 480px;
-  outline: 5px solid rgba(255, 0, 0, 0.8);
-  outline-offset: -5px;
 
   @media (min-width: $tablet-width) {
     width: 708px;
@@ -25,6 +23,10 @@
     width: 708px;
     background-color: $white;
   }
+
+  @media (min-width: $desktop-width) {
+    min-height: 566px;
+  }
 }
 
 .promo__title {
@@ -42,6 +44,11 @@
     margin-left: 95px;
     margin-top: 5px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 170px;
+    margin-top: 65px;
+  }
 }
 
 .promo__slogan {
@@ -58,6 +65,11 @@
     margin-top: 41px;
     margin-left: 95px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 170px;
+    margin-top: 42px;
+  }
 }
 
 .promo__link {
@@ -73,5 +85,19 @@
     min-height: 34px;
     margin-top: 30px;
     margin-left: 92px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 170px;
+  }
+}
+
+.promo__image {
+  @media (min-width: $desktop-width) {
+    display: inline-block;
+    height: 560px;
+    width: 420px;
+    margin-left: 640px;
+    margin-top: -375px;
   }
 }
