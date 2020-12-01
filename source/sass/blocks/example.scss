@@ -1,4 +1,5 @@
 .example {
+  @include wrapper;
   @include font-set(14px, 18px, 400);
   font-family: $secondary-font;
   font-style: normal;
@@ -8,19 +9,17 @@
   min-height: 705px;
 
   @media (min-width: $tablet-width) {
-    width: 708px;
     min-height: 1060px;
     background-color: $white;
   }
 
   @media (min-width: $desktop-width) {
-    width: 1440px;
     min-height: 610px;
   }
 }
 
 .example__wrapper {
-  padding: 27px 20px 20px;
+  padding: 0 20px;
 
   @media (min-width: $desktop-width) {
     display: flex;
@@ -39,30 +38,31 @@
 
   @media (min-width: $tablet-width) {
     @include font-set(60px, 60px);
-    margin-left: 10px;
+    margin-left: -20px;
+    margin-top: -5px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: -25px;
-    margin-left: 90px;
+    margin-top: -28px;
+    margin-left: -20px;
   }
 }
 
 .example__description {
   color: $special-dark-grey;
   width: 279px;
-  margin-top: 3px;
+  margin-top: 32px;
 
   @media (min-width: $tablet-width) {
     @include font-set(16px, 24px);
     width: 700px;
-    margin-left: 10px;
-    margin-top: 30px;
+    margin-top: 64px;
+    margin-left: -20px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 118px;
-    margin-left: 90px;
+    margin-top: 148px;
+    margin-left: -20px;
     width: 436px;
   }
 }
@@ -80,11 +80,13 @@
 
   @media (min-width: $tablet-width) {
     @include font-set(30px, 37px);
+    margin-top: 30px;
+    margin-left: 35px;
   }
 
   @media (min-width: $desktop-width) {
     margin-top: 45px;
-    margin-left: 145px;
+    margin-left: 37px;
   }
 }
 
@@ -112,13 +114,13 @@
     @include font-set(20px, 20px);
     width: 175px;
     text-align: right;
-    margin-left: 500px;
-    margin-top: -50px;
+    margin-left: 510px;
+    margin-top: -70px;
   }
 
   @media (min-width: $desktop-width) {
     margin-top: 63px;
-    margin-left: 55px;
+    margin-left: -57px;
     width: 300px;
   }
 }
@@ -127,7 +129,6 @@
   @media (min-width: $desktop-width) {
     width: 690px;
     height: 636px;
-    margin-top: -150px;
-    margin-right: 20px;
+    margin-top: -130px;
   }
 }

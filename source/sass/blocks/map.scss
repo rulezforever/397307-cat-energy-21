@@ -1,27 +1,27 @@
 .map {
+  @include wrapper;
   height: 362px;
   background-color: $basic-grey;
 
   @media (min-width: $tablet-width) {
-    width: 768px;
     height: 400px;
+    margin-top: 8px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 1440px;
     margin-top: -298px;
+    margin-left: -120px;
   }
 }
 
 .map__image {
   @media (min-width: $tablet-width) {
-    width: 768px;
     height: 400px;
   }
 
   @media (min-width: $desktop-width) {
+    @include wrapper;
     height: 400px;
-    width: 1440px;
     position: absolute;
   }
 }

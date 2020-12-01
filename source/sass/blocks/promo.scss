@@ -1,31 +1,28 @@
 .promo {
   font-family: $primary-font;
   min-height: 480px;
-
-  @media (min-width: $tablet-width) {
-    width: 708px;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 1440px;
-  }
 }
 
 .promo__wrapper {
+  @include wrapper;
   max-height: 302px;
   background-color: rgba($bg-green, 0.85);
-  padding: 0 20px;
   display: flex;
   flex-direction: column;
+  padding: 0 20px;
 
   @media (min-width: $tablet-width) {
     min-height: 820px;
-    width: 708px;
+    margin-left: 87px;
     background-color: $white;
   }
 
   @media (min-width: $desktop-width) {
+    margin-left: 80px;
     min-height: 566px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 200px 1fr 1fr;
   }
 }
 
@@ -37,17 +34,16 @@
   margin: 0;
 
   @media (min-width: $tablet-width) {
-    @include font-set(60px, 60px, 400);
+    @include font-set(60px, 60px);
     text-align: left;
     color: $black;
     width: 415px;
-    margin-left: 95px;
     margin-top: 5px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: 170px;
     margin-top: 65px;
+    grid-column: 1 / 2;
   }
 }
 
@@ -59,16 +55,15 @@
   margin-top: 25px;
 
   @media (min-width: $tablet-width) {
-    @include font-set(20px, 20px, 400);
+    @include font-set(20px, 20px);
     text-align: left;
     color: $black;
     margin-top: 41px;
-    margin-left: 95px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: 170px;
-    margin-top: 42px;
+    grid-column: 1 / 2;
+    margin-top: 54px;
   }
 }
 
@@ -84,20 +79,23 @@
     width: 244px;
     min-height: 34px;
     margin-top: 30px;
-    margin-left: 92px;
+    margin-left: -5px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: 170px;
+    margin-left: 0;
+    grid-column: 1 / 2;
+    height: 34px;
+    margin-top: -58px;
   }
 }
 
 .promo__image {
   @media (min-width: $desktop-width) {
-    display: inline-block;
-    height: 560px;
-    width: 420px;
-    margin-left: 640px;
-    margin-top: -375px;
+    grid-row: 1 / 4;
+    grid-column: 2 / 3;
+    width: 720px;
+    height: 566px;
+    margin-left: 115px;
   }
 }
