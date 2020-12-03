@@ -1,31 +1,107 @@
 .work {
   @include font-set(14px, 18px, 400);
   font-family: $secondary-font;
-  font-style: normal;
   color: $black;
   margin: 0;
+
+  @media (min-width: $desktop-width) {
+    min-height: 400px;
+  }
 }
 
 .work__title {
   @include font-set(36px, 40px, 400);
   font-family: $primary-font;
-  font-style: normal;
   margin: 0;
-  margin-top: 5px;
+  margin-bottom: 40px;
+  padding-top: 5px;
+
+  @media (min-width: $tablet-width) {
+    @include font-set(60px, 60px);
+    margin-top: 15px;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include font-set(60px, 60px);
+    margin-top: 25px;
+  }
 }
 
 .work__list {
   @include list-reset;
-  margin-top: 40px;
-  margin-left: 80px;
-  margin-bottom: 30px;
+  padding-left: 80px;
+  margin-bottom: 50px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+    gap: 35px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid $line-grey;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+    border: none;
+  }
 }
 
 .work__item {
-  margin-top: 25px;
+  margin-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    width: 45%;
+    padding-top: 130px;
+    padding-bottom: 35px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 250px;
+    margin-left: 0;
+    margin-bottom: 0;
+  }
+
+  &:nth-of-type(2) {
+    @media (min-width: $tablet-width) {
+      padding-left: 28px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-left: 40px;
+    }
+  }
+
+  &:nth-of-type(3) {
+    @media (min-width: $tablet-width) {
+      padding-top: 117px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-top: 127px;
+      padding-left: 40px;
+    }
+  }
+
+  &:nth-of-type(4) {
+    @media (min-width: $tablet-width) {
+      padding-left: 30px;
+      padding-top: 117px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-left: 35px;
+      padding-top: 130px;
+    }
+  }
 }
 
 .work__item p {
   color: $special-dark-grey;
   width: 200px;
+
+  @media (min-width: $tablet-width) {
+    @include font-set(16px, 24px);
+    width: 245px;
+  }
 }

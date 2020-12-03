@@ -2,4 +2,22 @@
 
 .social__list {
   @include list-reset;
+  display: flex;
+}
+
+.social__link {
+  &--vkontakte {
+    width: 23px;
+    height: 16px;
+  }
+
+  &--instagram {
+    width: 16px;
+    height: 16px;
+  }
+
+  &--facebook {
+    width: 22px;
+    height: 22px;
+  }
 }

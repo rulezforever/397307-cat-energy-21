@@ -1,7 +1,35 @@
+.main-nav {
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    width: auto;
+    padding: 20px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+  }
+}
 
 .main-nav__list {
   @include list-reset;
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 440px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 50px;
+    width: 475px;
+    background-color: $bg-green;
+  }
 }
 
 .main-nav__item {
@@ -10,14 +38,45 @@
   text-align: center;
   border-bottom: 1px solid $line-grey;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    border: none;
+  }
+
+  &--active {
+    @media (min-width: $tablet-width) {
+      border-bottom: 2px solid $basic-font;
+    }
+
+    @media (min-width: $desktop-width) {
+      border-bottom: 2px solid $white;
+    }
+  }
 }
 
 .main-nav__item a {
   color: $black;
+
+  @media (min-width: $tablet-width) {
+    @include font-set(18px, 24px, 400);
+  }
+
+  @media (min-width: $desktop-width) {
+    @include font-set(20px, 30px, 400);
+    color: $white;
+  }
 }
 
 .main-nav__toggle {
   display: inline-block;
   width: 18px;
   height: 18px;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }

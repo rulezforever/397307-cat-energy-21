@@ -7,33 +7,78 @@
 
 .services__list {
   @include list-reset;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 80px;
+    margin-top: 80px;
+  }
 }
 
 .services__item {
-  min-height: 266px;
   background-color: $basic-grey;
-  padding: 0 20px;
-  margin: 0;
-  margin-top: 24px;
+  padding: 20px 20px;
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 50px;
+    margin-bottom: 30px;
+    padding-top: 18px;
+    padding-bottom: 58px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 570px;
+    padding: 50px 0;
+  }
 }
 
 .services__name {
   @include font-set(24px, 37px, 400);
   font-family: $primary-font;
-  font-style: normal;
   color: $black;
   text-transform: uppercase;
   text-align: center;
   margin: 0;
-  padding-top: 30px;
+  padding-top: 10px;
+
+  @media (min-width: $tablet-width) {
+    @include font-set(36px, 36px);
+    text-align: left;
+    margin-top: 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: center;
+    margin-top: 15px;
+  }
 }
 
 .services__description {
   color: $special-dark-grey;
   width: 227px;
-  padding-bottom: 23px;
+  padding-bottom: 27px;
   border-bottom: 1px solid $border-grey;
   margin-top: 29px;
+
+  @media (min-width: $tablet-width) {
+    @include font-set(16px, 24px);
+    border: none;
+    width: 377px;
+    padding-bottom: 32px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 45px;
+    width: 467px;
+    padding-bottom: 12px;
+    padding-left: 50px;
+  }
 }
 
 .services__link {
@@ -42,4 +87,13 @@
   font-style: normal;
   color: $black;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    @include font-set(20px, 30px);
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 50px;
+    margin-top: 85px;
+  }
 }

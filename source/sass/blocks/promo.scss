@@ -1,14 +1,24 @@
 .promo {
   font-family: $primary-font;
   min-height: 480px;
+  position: relative;
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 340px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 20px;
+  }
 }
 
 .promo__wrapper {
-  max-height: 302px;
   background-color: rgba($bg-green, 0.85);
-  padding: 0 20px;
-  display: flex;
-  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    background-color: $white;
+  }
 }
 
 .promo__title {
@@ -17,6 +27,21 @@
   color: $white;
   padding-top: 27px;
   margin: 0;
+  margin-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    @include font-set(60px, 60px);
+    text-align: left;
+    color: $black;
+    width: 415px;
+    margin-top: 5px;
+    padding-left: 87px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 60px;
+    padding-left: 82px;
+  }
 }
 
 .promo__slogan {
@@ -25,11 +50,51 @@
   color: $white;
   text-transform: uppercase;
   margin-top: 25px;
+
+  @media (min-width: $tablet-width) {
+    @include font-set(20px, 20px);
+    text-align: left;
+    color: $black;
+    margin-top: 41px;
+    padding-left: 87px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 40px;
+    padding-left: 80px;
+  }
 }
 
 .promo__link {
   @include center;
   width: 280px;
-  min-height: 40px;
-  order: 4;
+
+  @media (min-width: $tablet-width) {
+    @include font-set(20px, 20px, 400);
+    width: 244px;
+    padding: 17px 0;
+    margin-top: 49px;
+    margin-left: 82px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 52px;
+    margin-left: 80px;
+  }
+}
+
+.promo__image {
+  @media (min-width: $tablet-width) {
+    width: 709px;
+    height: 510px;
+    position: absolute;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 720px;
+    height: 566px;
+    position: absolute;
+    top: -65px;
+    right: 200px;
+  }
 }

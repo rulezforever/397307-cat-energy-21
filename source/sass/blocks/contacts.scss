@@ -1,9 +1,23 @@
 .contacts {
   min-height: 114px;
+  position: relative;
+  z-index: 2;
 }
 
 .contacts__wrapper {
   padding: 10px 20px;
+  background-color: $white;
+
+  @media (min-width: $tablet-width) {
+    width: 625px;
+    padding: 50px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 110px;
+    margin-left: 110px;
+    width: 570px;
+  }
 }
 
 .contacts__invite {
@@ -13,14 +27,47 @@
   color: $black;
   width: 135px;
   text-transform: uppercase;
-  display: inline-block;
+
+  @media (min-width: $tablet-width) {
+    @include font-set(20px, 21px);
+    width: 171px;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
+  }
 }
 
 .contacts__address {
   @include font-set(14px, 20px, 400);
   font-family: $secondary-font;
-  font-style: normal;
   color: $special-dark-grey;
   width: 135px;
-  display: inline-block;
+  padding-top: 5px;
+
+  @media (min-width: $tablet-width) {
+    @include font-set(16px, 20px);
+    text-align: right;
+    width: 160px;
+    padding-top: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
+    margin-right: 15px;
+  }
+}
+
+.contacts__info {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+
+  @media (min-width: $tablet-width) {
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 30px;
+  }
 }

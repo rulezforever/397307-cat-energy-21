@@ -1,11 +1,21 @@
 .page-footer {
   min-height: 236px;
   background-color: $basic-grey;
+  padding: 0 30px;
+
+  @media (min-width: $tablet-width) {
+    min-height: 150px;
+  }
 }
 
 .page-footer__wrapper {
-  padding: 0 20px;
-  margin: 0;
+  @media (min-width: $tablet-width) {
+    padding: 0 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+  }
 }
 
 .page-footer__logo {
@@ -13,8 +23,12 @@
   width: 280px;
   height: 95px;
   border-bottom: 1px solid $border-grey;
-}
 
+  @media (min-width: $tablet-width) {
+    border: none;
+    width: 140px;
+  }
+}
 
 .page-footer__logo img {
   width: 128px;
@@ -26,4 +40,9 @@
   width: 280px;
   height: 45px;
   border-bottom: 1px solid $border-grey;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+    width: 180px;
+  }
 }

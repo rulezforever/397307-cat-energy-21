@@ -1,15 +1,30 @@
 .example {
   @include font-set(14px, 18px, 400);
   font-family: $secondary-font;
-  font-style: normal;
   color: $black;
-  margin: 0;
   background-color: $bg-grey;
-  min-height: 705px;
+
+  @media (min-width: $tablet-width) {
+    background-color: $white;
+  }
 }
 
 .example__wrapper {
-  padding: 27px 20px 20px;
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+.example__wrapper-left {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+
+  @media (min-width: $desktop-width) {
+    justify-content: flex-start;
+  }
 }
 
 .example__title {
@@ -17,38 +32,113 @@
   font-family: $primary-font;
   font-style: normal;
   margin: 0;
+  margin-bottom: 15px;
+  padding-top: 28px;
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    @include font-set(60px, 60px);
+    margin-bottom: 45px;
+    padding-top: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 130px;
+    padding-top: 45px;
+  }
 }
 
 .example__description {
   color: $special-dark-grey;
-  width: 279px;
-  margin-top: 33px;
+  width: 275px;
+  margin-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    @include font-set(16px, 24px);
+    width: 700px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 436px;
+  }
 }
 
 .example__item {
   display: inline-block;
-  margin-top: 22px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 35px;
+    padding-top: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 45px;
+    padding-left: 57px;
+  }
 }
 
 .example__number {
   @include font-set(24px, 24px, 400);
   font-family: $primary-font;
-  font-style: normal;
   text-transform: uppercase;
-}
 
+  @media (min-width: $tablet-width) {
+    @include font-set(30px, 37px);
+  }
+}
 
 .example__text {
   @include font-set(12px, 12px);
   text-transform: lowercase;
   text-align: center;
   width: 59px;
+
+  @media (min-width: $tablet-width) {
+    @include font-set(14px, 14px);
+    width: 130px;
+  }
 }
 
 .example__costs {
   @include font-set(14px, 20px, 400);
   font-family: $primary-font;
-  font-style: normal;
   text-transform: uppercase;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    @include font-set(20px, 20px);
+    width: 175px;
+    text-align: right;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 300px;
+    margin-top: 50px;
+    text-align: left;
+  }
+}
+
+.example__image {
+  height: 300px;
+
+  @media (min-width: $tablet-width) {
+    width: 690px;
+    height: 560px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 690px;
+    height: 570px;
+  }
+}
+
+.example__button {
+  @include font-set(16px, 20px);
+  font-family: $primary-font;
+  text-transform: uppercase;
+  border: none;
+
+  @media (min-width: $tablet-width) {
+    @include font-set(20px, 30px);
+  }
 }
