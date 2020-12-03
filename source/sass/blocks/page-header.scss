@@ -1,31 +1,30 @@
 .page-header {
-  @include wrapper;
   @include font-set(20px, 20px, 500);
   background-color: $white;
   font-family: $primary-font;
-  font-style: normal;
   color: $black;
   text-transform: uppercase;
   padding: 0;
   margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: center;
 
-  @media (min-width: $tablet-width) {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 20px 30px;
-  }
 
   @media (min-width: $desktop-width) {
     padding: 0 110px;
-    min-height: 130px;
   }
 }
 
 .page-header__logo {
   background-color: $white;
 
+  @media (min-width: $tablet-width) {
+    padding: 20px 0;
+  }
+
   @media (min-width: $desktop-width) {
-    margin-top: 50px;
+    margin-top: 35px;
   }
 }

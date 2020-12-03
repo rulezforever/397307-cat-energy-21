@@ -3,14 +3,16 @@
   margin-top: 45px;
 
   @media (min-width: $tablet-width) {
-    margin-top: 63px;
-    margin-right: 52px;
+    padding-top: 10px;
+  }
+
+  @media (min-width: $desktop-width) {
+    // padding-top: 35px;
   }
 }
 
 .copyright__link {
   @include font-set(16px, 18px, 400);
   font-family: $secondary-font;
-  font-style: normal;
   color: $special-dark-grey;
 }

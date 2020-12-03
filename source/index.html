@@ -14,7 +14,7 @@
 
 <body class="page__body">
 
-  <header class="page-header">
+  <header class="page-header wrapper">
     <a class="page-header__logo">
       <img src="https://via.placeholder.com/202x60" width="202" height="60" alt="Логотип Кэт Энерджи">
     </a>
@@ -35,11 +35,10 @@
   </header>
 
   <main class="page-main">
-    <h1 class="visually-hidden">Интернет-магазин «Кэт энерджи»</h1>
 
     <section class="promo">
-      <div class="promo__wrapper">
-        <h2 class="promo__title">Функциональное питание для котов</h2>
+      <div class="promo__wrapper wrapper">
+        <h1 class="promo__title">Функциональное питание для котов</h1>
         <p class="promo__slogan">Занялся собой? Займись котом!</p>
         <a class="promo__link button" href="form.html">Подобрать программу</a>
         <img class="promo__image" src="https://via.placeholder.com/280x290" width="280" height="290"
@@ -92,11 +91,10 @@
 
     </section>
 
-    <section class="example">
-      <h2 class="example__title">Живой пример</h2>
+    <section class="example wrapper">
       <div class="example__wrapper">
-
         <div class="example__wrapper-left">
+          <h2 class="example__title">Живой пример</h2>
           <p class="example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy
             Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит
             по 16 часов в день.
@@ -119,28 +117,32 @@
               alt="Толстый кот">
           </div>
           <div class="example__slider">
+            <button class="example__button example__button--before" type="button" aria-label="before">Было</button>
             <div class="example__bar">
               <div class="example__toggle"></div>
             </div>
+            <button class="example__button example__button--after" type="button" aria-label="after">Стало</button>
           </div>
         </div>
       </div>
     </section>
 
     <section class="contacts">
-      <div class="contacts__wrapper">
+      <div class="contacts__wrapper wrapper">
         <h2 class="visually-hidden">Контакты</h2>
-        <p class="contacts__invite">Приглашаем к сотрудничеству дилеров!</p>
-        <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+        <div class="contacts__info">
+          <p class="contacts__invite">Приглашаем <br>к сотрудничеству дилеров!</p>
+          <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+        </div>
       </div>
     </section>
 
-    <div class="map">
+    <div class="map wrapper">
       <img class="map__image" src="https://via.placeholder.com/320x362" width="320" height="362"
         alt="г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
     </div>
 
-    <footer class="page-footer">
+    <footer class="page-footer wrapper">
       <div class="page-footer__wrapper">
         <a class="page-footer__logo">
           <img src="https://via.placeholder.com/128x24" width="128" height="24" alt="Логотип Кэт Энерджи">
