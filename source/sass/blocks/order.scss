@@ -1,6 +1,10 @@
 .order {
   margin-top: 35px;
-  margin-bottom: 12px;
+  margin-bottom: 32px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 60px;
+  }
 }
 
 .order__group label,
@@ -10,12 +14,20 @@
   font-family: $primary-font;
   color: $special-dark-grey;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    @include font-set(20px, 30px);
+  }
 }
 
 .order__group {
   margin: 0;
   padding: 0;
   margin-bottom: 10px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 23px;
+  }
 }
 
 .order__item {
@@ -25,18 +37,37 @@
 
   &--cat {
     margin-bottom: 16px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 66px;
+    }
   }
 
   &--service {
     margin-bottom: 43px;
+
+    @media (min-width: $tablet-width) {
+      margin-left: 5px;
+      border: 1px solid $border-grey2;
+      padding-left: 40px;
+      margin-bottom: 78px;
+    }
   }
 
   &--owner {
     margin-bottom: 15px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 45px;
+    }
   }
 
   &--comment {
     margin-bottom: 23px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 60px;
+    }
   }
 }
 
@@ -47,6 +78,10 @@
 
 .order__radio {
   margin-top: 15px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 13px;
+  }
 }
 
 .order__input {
@@ -56,6 +91,54 @@
   padding-left: 15px;
   border: 1px solid $border-grey2;
   box-sizing: border-box;
+
+  &[id="cat-name"] {
+    width: 228px;
+
+    @media (min-width: $tablet-width) {
+      margin-left: 15px;
+      width: 563px;
+    }
+  }
+
+  &[id="cat-weight"] {
+    width: 205px;
+    margin-left: 12px;
+
+    @media (min-width: $tablet-width) {
+      margin-left: 18px;
+      width: 533px;
+    }
+  }
+
+  &[id="cat-age"] {
+    width: 170px;
+    margin-left: 12px;
+
+    @media (min-width: $tablet-width) {
+      margin-left: 16px;
+      width: 491px;
+    }
+  }
+
+  &[id="email"] {
+    width: 217px;
+
+    @media (min-width: $tablet-width) {
+      margin-left: 16px;
+      width: 547px;
+    }
+  }
+
+  &[id="phone"] {
+    width: 202px;
+    margin-left: 8px;
+
+    @media (min-width: $tablet-width) {
+      margin-left: 12px;
+      width: 530px;
+    }
+  }
 }
 
 .order__list {
@@ -64,12 +147,54 @@
   &--radio {
     margin-top: 12px;
   }
+
+  &--checkbox {
+    @media (min-width: $tablet-width) {
+      display: flex;
+      flex-wrap: wrap;
+      // width: 565px;
+    }
+
+    @media (min-width: $desktop-width) {
+      display: flex;
+    }
+  }
+
+  &--checkbox .order__group {
+    @media (min-width: $tablet-width) {
+      margin-top: 15px; ///----------------------
+    }
+  }
+
+  &--checkbox .order__group:nth-of-type(odd) {
+    @media (min-width: $tablet-width) {
+      width: 220px;
+      margin-right: 140px;
+    }
+  }
 }
 
 .order__title {
   @include font-set(24px, 26px, 400);
   font-family: $primary-font;
   margin-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    @include font-set(36px, 36px);
+    margin-bottom: 75px;
+  }
+
+  &--comment {
+    @media (min-width: $tablet-width) {
+      margin-bottom: 60px;
+    }
+  }
+
+  &--extra {
+    @media (min-width: $tablet-width) {
+      margin-bottom: 45px;
+    }
+  }
 }
 
 .order__text {
@@ -77,6 +202,14 @@
   padding-top: 10px;
   min-height: 135px;
   margin-top: 15px;
+  width: 275px;
+
+  @media (min-width: $tablet-width) {
+    width: 610px;
+    min-height: 160px;
+    text-align: left;
+    padding-left: 18px;
+  }
 }
 
 .order__check-label {
@@ -94,14 +227,30 @@
   margin-top: 29px;
   border: none;
   margin-bottom: 17px;
+
+  @media (min-width: $tablet-width) {
+    @include font-set(20px, 20px);
+    padding: 16px 0;
+  }
 }
 
 .order__small {
   @include font-set(14px, 16px, 400);
   font-family: $secondary-font;
   margin-left: 63px;
+
+  @media (min-width: $tablet-width) {
+    @include font-set(16px, 16px);
+    padding-top: 45px;
+  }
 }
 
 .order__input-label {
   margin-top: 15px;
+}
+
+.order__container {
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
 }
