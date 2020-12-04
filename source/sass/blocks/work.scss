@@ -37,62 +37,43 @@
     flex-wrap: wrap;
     padding-left: 0;
     gap: 35px;
-    padding-bottom: 20px;
+    padding-bottom: 30px;
+
     border-bottom: 1px solid $line-grey;
   }
 
   @media (min-width: $desktop-width) {
     margin-bottom: 0;
     border: none;
+    padding-bottom: 15px;
   }
 }
 
 .work__item {
   margin-bottom: 25px;
 
+  &:nth-of-type(odd) {
+    @media (min-width: $tablet-width) {
+      margin-right: 97px;
+    }
+  }
+
+  &:not(:nth-of-type(4)) {
+    @media (min-width: $desktop-width) {
+      margin-right: 45px;
+    }
+  }
+
+
   @media (min-width: $tablet-width) {
-    width: 45%;
+    width: 250px;
     padding-top: 130px;
-    padding-bottom: 35px;
+    padding-bottom: 40px;
+    margin-bottom: 8px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 250px;
-    margin-left: 0;
-    margin-bottom: 0;
-  }
-
-  &:nth-of-type(2) {
-    @media (min-width: $tablet-width) {
-      padding-left: 28px;
-    }
-
-    @media (min-width: $desktop-width) {
-      padding-left: 40px;
-    }
-  }
-
-  &:nth-of-type(3) {
-    @media (min-width: $tablet-width) {
-      padding-top: 117px;
-    }
-
-    @media (min-width: $desktop-width) {
-      padding-top: 127px;
-      padding-left: 40px;
-    }
-  }
-
-  &:nth-of-type(4) {
-    @media (min-width: $tablet-width) {
-      padding-left: 30px;
-      padding-top: 117px;
-    }
-
-    @media (min-width: $desktop-width) {
-      padding-left: 35px;
-      padding-top: 130px;
-    }
+    width: 245px;
   }
 }
 
