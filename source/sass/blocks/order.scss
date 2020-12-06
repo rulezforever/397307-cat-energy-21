@@ -5,6 +5,10 @@
   @media (min-width: $tablet-width) {
     margin-bottom: 60px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 180px;
+  }
 }
 
 .order__group label,
@@ -41,6 +45,11 @@
     @media (min-width: $tablet-width) {
       margin-bottom: 66px;
     }
+
+    @media (min-width: $desktop-width) {
+      margin-right: 75px;
+      margin-bottom: 0;
+    }
   }
 
   &--service {
@@ -51,6 +60,13 @@
       border: 1px solid $border-grey2;
       padding-left: 40px;
       margin-bottom: 78px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-top: 20px;
+      padding-left: 40px;
+      width: 525px;
+      margin-bottom: 0;
     }
   }
 
@@ -99,6 +115,10 @@
       margin-left: 15px;
       width: 563px;
     }
+
+    @media (min-width: $desktop-width) {
+      width: 505px;
+    }
   }
 
   &[id="cat-weight"] {
@@ -108,6 +128,10 @@
     @media (min-width: $tablet-width) {
       margin-left: 18px;
       width: 533px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 475px;
     }
   }
 
@@ -119,6 +143,11 @@
       margin-left: 16px;
       width: 491px;
     }
+
+    @media (min-width: $desktop-width) {
+      width: 435px;
+      margin-bottom: 50px;
+    }
   }
 
   &[id="email"] {
@@ -127,6 +156,11 @@
     @media (min-width: $tablet-width) {
       margin-left: 16px;
       width: 547px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 490px;
+      margin-right: 80px;
     }
   }
 
@@ -137,6 +171,10 @@
     @media (min-width: $tablet-width) {
       margin-left: 12px;
       width: 530px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 470px;
     }
   }
 }
@@ -152,17 +190,18 @@
     @media (min-width: $tablet-width) {
       display: flex;
       flex-wrap: wrap;
-      // width: 565px;
     }
 
     @media (min-width: $desktop-width) {
       display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
     }
   }
 
   &--checkbox .order__group {
     @media (min-width: $tablet-width) {
-      margin-top: 15px; ///----------------------
+      margin-top: 15px;
     }
   }
 
@@ -210,6 +249,11 @@
     text-align: left;
     padding-left: 18px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 1200px;
+    margin-bottom: 5px;
+  }
 }
 
 .order__check-label {
@@ -232,6 +276,12 @@
     @include font-set(20px, 20px);
     padding: 16px 0;
   }
+
+  @media (min-width: $desktop-width) {
+    @include font-set(20px, 20px);
+    padding: 18px 0;
+    width: 568px;
+  }
 }
 
 .order__small {
@@ -252,5 +302,12 @@
 .order__container {
   @media (min-width: $tablet-width) {
     display: flex;
+  }
+}
+
+.order__wrapper {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-wrap: wrap;
   }
 }
