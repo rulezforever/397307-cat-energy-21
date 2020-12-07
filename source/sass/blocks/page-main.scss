@@ -23,11 +23,13 @@
 
   @media (min-width: $tablet-width) {
     @include font-set(20px, 30px);
-    width: 400px;
+    width: 450px;
     padding-bottom: 50px;
   }
 
   @media (min-width: $desktop-width) {
+    @include wrapper;
     padding-bottom: 15px;
+    width: 350px;
   }
 }

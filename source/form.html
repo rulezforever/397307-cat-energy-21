@@ -35,23 +35,23 @@
   </header>
 
   <main class="page-main">
-    <h1 class="page-main__title wrapper-catalog">Подбор программы</h1>
-    <p class="page-main__text wrapper-catalog">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+    <h1 class="page-main__title wrapper">Подбор программы</h1>
+    <p class="page-main__text wrapper">Заполните анкету, и мы подберем программу питания для вашего кота</p>
 
-    <form class="order wrapper-catalog" id="order" method="post" action="https://echo.htmlacademy.ru">
-      <div class="order__wrapper">
+    <form class="order wrapper" id="order" method="post" action="https://echo.htmlacademy.ru">
+      <!-- <div class="order__wrapper"> -->
       <fieldset class="order__item order__item--cat">
         <p class="order__group">
-          <label class="order__input-label" for="cat-name">Имя:<sup>*</sup></label>
-          <input class="order__input" id="cat-name" type="text" name="cat-name" placeholder="Барсик" required>
+          <label class="order__input-label" for="cat-name">Имя:<sup>*</sup>
+          <input class="order__input" id="cat-name" type="text" name="cat-name" placeholder="Барсик" required></label>
         </p>
         <p class="order__group">
-          <label class="order__input-label" for="cat-weight">Вес (кг):<sup>*</sup></label>
-          <input class="order__input" id="cat-weight" type="number" name="cat-weight" placeholder="7" required>
+          <label class="order__input-label" for="cat-weight">Вес (кг):<sup>*</sup>
+          <input class="order__input" id="cat-weight" type="number" name="cat-weight" placeholder="7" required></label>
         </p>
         <p class="order__group">
-          <label class="order__input-label" for="cat-age">Возраст (лет):</label>
-          <input class="order__input" id="cat-age" type="number" name="cat-age" placeholder="7">
+          <label class="order__input-label" for="cat-age">Возраст (лет):
+          <input class="order__input" id="cat-age" type="number" name="cat-age" placeholder="7"></label>
         </p>
       </fieldset>
 
@@ -71,17 +71,17 @@
           </li>
         </ul>
       </fieldset>
-    </div>
+    <!-- </div> -->
       <fieldset class="order__item order__item--owner">
         <legend class="order__title">Контактные данные (владельца кота)</legend>
         <div class="order__wrapper">
         <p class="order__group">
-          <label class="order__input-label" for="email">E-mail:<sup>*</sup></label>
-          <input class="order__input" id="email" type="email" name="email" placeholder="kuklachev@gmail.com" required>
+          <label class="order__input-label" for="email">E-mail:<sup>*</sup>
+          <input class="order__input" id="email" type="email" name="email" placeholder="kuklachev@gmail.com" required></label>
         </p>
         <p class="order__group">
-          <label class="order__input-label" for="phone">Телефон:<sup>*</sup></label>
-          <input class="order__input" id="phone" type="tel" name="phone" placeholder="8 (960) 900-60-90" required>
+          <label class="order__input-label" for="phone">Телефон:<sup>*</sup>
+          <input class="order__input" id="phone" type="tel" name="phone" placeholder="8 (960) 900-60-90" required></label>
         </p>
       </div>
       </fieldset>
@@ -114,7 +114,7 @@
           </li>
         </ul>
       </fieldset>
-      <div class="order__container">
+      <div class="order__footer">
         <button class="order__button button" type="submit">Отправить заявку</button>
         <small class="order__small">
           <sup>*</sup> — Обязательные поля
