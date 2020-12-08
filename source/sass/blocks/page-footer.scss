@@ -1,14 +1,10 @@
 .page-footer {
   min-height: 236px;
   background-color: $basic-grey;
-  padding: 40px 30px;
+  padding: 40px 0;
 
   @media (min-width: $tablet-width) {
-    padding: 60px 30px;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding: 60px 30px;
+    padding: 60px 0;
   }
 }
 
