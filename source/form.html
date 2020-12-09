@@ -14,7 +14,7 @@
 
 <body class="page__body">
 
-  <header class="page-header">
+  <header class="page-header wrapper">
     <a class="page-header__logo">
       <img src="https://via.placeholder.com/202x60" width="202" height="60" alt="Логотип Кэт Энерджи">
     </a>
@@ -35,23 +35,22 @@
   </header>
 
   <main class="page-main">
-    <h1 class="page-main__title">Подбор программы</h1>
-    <p class="page-main__text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+    <h1 class="page-main__title wrapper wrapper--form">Подбор программы</h1>
+    <p class="page-main__text wrapper wrapper--form">Заполните анкету, и мы подберем программу питания для вашего кота</p>
 
-    <form class="order wrapper" id="order" method="post" action="https://echo.htmlacademy.ru">
+    <form class="order wrapper wrapper--form" id="order" method="post" action="https://echo.htmlacademy.ru">
       <fieldset class="order__item order__item--cat">
         <p class="order__group">
-          <label class="order__input-label" for="cat-name">Имя:<sup>*</sup></label>
-          <input class="order__input" id="cat-name" type="text" name="cat-name" placeholder="Барсик" required>
+          <label class="order__input-label" for="cat-name">Имя:<sup>*</sup>
+          <input class="order__input" id="cat-name" type="text" name="cat-name" placeholder="Барсик" required></label>
         </p>
         <p class="order__group">
-          <label class="order__input-label" for="cat-weight">Вес (кг):<sup>*</sup></label>
-            <input class="order__input" id="cat-weight" type="number" name="cat-weight" placeholder="7"
-              required>
+          <label class="order__input-label" for="cat-weight">Вес (кг):<sup>*</sup>
+          <input class="order__input" id="cat-weight" type="number" name="cat-weight" placeholder="7" required></label>
         </p>
         <p class="order__group">
-          <label class="order__input-label" for="cat-age">Возраст (лет):</label>
-          <input class="order__input" id="cat-age" type="number" name="cat-age" placeholder="7">
+          <label class="order__input-label" for="cat-age">Возраст (лет):
+          <input class="order__input" id="cat-age" type="number" name="cat-age" placeholder="7"></label>
         </p>
       </fieldset>
 
@@ -71,31 +70,30 @@
           </li>
         </ul>
       </fieldset>
-
       <fieldset class="order__item order__item--owner">
-        <legend class="order__title">Контактные данные (владельца кота)</legend>
+        <legend class="order__title order__title--owner">Контактные данные (владельца кота)</legend>
+        <div class="order__wrapper order__wrapper--owner">
         <p class="order__group">
-          <label class="order__input-label" for="email">E-mail:<sup>*</sup></label>
-          <input class="order__input" id="email" type="email" name="email" placeholder="kuklachev@gmail.com"
-            required>
+          <label class="order__input-label" for="email">E-mail:<sup>*</sup>
+          <input class="order__input" id="email" type="email" name="email" placeholder="kuklachev@gmail.com" required></label>
         </p>
         <p class="order__group">
-          <label class="order__input-label" for="phone">Телефон:<sup>*</sup></label>
-          <input class="order__input" id="phone" type="tel" name="phone" placeholder="8 (960) 900-60-90"
-            required>
+          <label class="order__input-label" for="phone">Телефон:<sup>*</sup>
+          <input class="order__input" id="phone" type="tel" name="phone" placeholder="8 (960) 900-60-90" required></label>
         </p>
+      </div>
       </fieldset>
 
       <fieldset class="order__item order__item--comment">
-        <legend class="order__title">Комментарий</legend>
+        <legend class="order__title order__title--comment">Комментарий</legend>
         <label class="visually-hidden" for="comment">Текст комментария:</label>
         <textarea class="order__text" id="comment" name="comment"
           placeholder="Расскажите обо всех повадках кота"></textarea>
       </fieldset>
 
-      <fieldset class="order__item">
-        <legend class="order__title">Дополнительно</legend>
-        <ul class="order__list">
+      <fieldset class="order__item order__item--extra">
+        <legend class="order__title order__title--extra">Дополнительно</legend>
+        <ul class="order__list order__list--checkbox">
           <li class="order__group">
             <input class="order__check" type="checkbox" name="sweetener" id="sweetener" checked>
             <label class="order__check-label" for="sweetener">Сахарозаменитель</label>
@@ -114,17 +112,21 @@
           </li>
         </ul>
       </fieldset>
-      <button class="order__button button" type="submit">Отправить заявку</button>
-      <small class="order__small">
-        <sup>*</sup> — Обязательные поля
-      </small>
+      <div class="order__footer">
+        <button class="order__button button" type="submit">Отправить заявку</button>
+        <small class="order__small">
+          <sup>*</sup> — Обязательные поля
+        </small>
+      </div>
     </form>
 
     <section class="contacts">
-      <div class="contacts__wrapper">
+      <div class="contacts__wrapper wrapper">
         <h2 class="visually-hidden">Контакты</h2>
-        <p class="contacts__invite">Приглашаем к сотрудничеству дилеров!</p>
-        <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+        <div class="contacts__info">
+          <p class="contacts__invite">Приглашаем <br>к сотрудничеству дилеров!</p>
+          <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+        </div>
       </div>
     </section>
 
@@ -134,7 +136,7 @@
     </div>
 
     <footer class="page-footer">
-      <div class="page-footer__wrapper">
+      <div class="page-footer__wrapper wrapper">
         <a class="page-footer__logo">
           <img src="https://via.placeholder.com/150x150" width="150" height="150" alt="Логотип Кэт Энерджи">
         </a>
