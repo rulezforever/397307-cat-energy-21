@@ -38,9 +38,8 @@
     <h1 class="page-main__title wrapper wrapper--form">Подбор программы</h1>
     <p class="page-main__text wrapper wrapper--form">Заполните анкету, и мы подберем программу питания для вашего кота</p>
 
-    <form class="order wrapper" id="order" method="post" action="https://echo.htmlacademy.ru">
-      <fieldset class="order__item order__item--cat ">
-        <!-- <div class="order__wrapper"> -->
+    <form class="order wrapper wrapper--form" id="order" method="post" action="https://echo.htmlacademy.ru">
+      <fieldset class="order__item order__item--cat">
         <p class="order__group">
           <label class="order__input-label" for="cat-name">Имя:<sup>*</sup>
           <input class="order__input" id="cat-name" type="text" name="cat-name" placeholder="Барсик" required></label>
@@ -53,11 +52,9 @@
           <label class="order__input-label" for="cat-age">Возраст (лет):
           <input class="order__input" id="cat-age" type="number" name="cat-age" placeholder="7"></label>
         </p>
-      <!-- </div> -->
       </fieldset>
 
       <fieldset class="order__item order__item--service">
-        <!-- <div class="order__wrapper wrapper"> -->
         <ul class="order__list order__list--radio">
           <li class="order__group">
             <input class="order__radio" type="radio" name="program" value="slim" id="slim" checked>
@@ -72,12 +69,10 @@
             <label class="order__radio-label" for="advice">Не знаю (нужен ваш совет)</label>
           </li>
         </ul>
-      <!-- </div> -->
       </fieldset>
       <fieldset class="order__item order__item--owner">
-        <!-- <div class="order__wrapper wrapper"> -->
-        <legend class="order__title">Контактные данные (владельца кота)</legend>
-        <div class="order__wrapper">
+        <legend class="order__title order__title--owner">Контактные данные (владельца кота)</legend>
+        <div class="order__wrapper order__wrapper--owner">
         <p class="order__group">
           <label class="order__input-label" for="email">E-mail:<sup>*</sup>
           <input class="order__input" id="email" type="email" name="email" placeholder="kuklachev@gmail.com" required></label>
@@ -90,16 +85,13 @@
       </fieldset>
 
       <fieldset class="order__item order__item--comment">
-        <!-- <div class="order__wrapper wrapper"> -->
         <legend class="order__title order__title--comment">Комментарий</legend>
         <label class="visually-hidden" for="comment">Текст комментария:</label>
         <textarea class="order__text" id="comment" name="comment"
           placeholder="Расскажите обо всех повадках кота"></textarea>
-        <!-- </div> -->
       </fieldset>
 
       <fieldset class="order__item order__item--extra">
-        <!-- <div class="order__wrapper wrapper"> -->
         <legend class="order__title order__title--extra">Дополнительно</legend>
         <ul class="order__list order__list--checkbox">
           <li class="order__group">
@@ -119,7 +111,6 @@
             <label class="order__check-label" for="vitamins">Витамины</label>
           </li>
         </ul>
-      <!-- </div> -->
       </fieldset>
       <div class="order__footer">
         <button class="order__button button" type="submit">Отправить заявку</button>
