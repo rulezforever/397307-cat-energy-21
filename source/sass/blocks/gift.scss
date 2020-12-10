@@ -1,8 +1,15 @@
 .gift {
   height: 289px;
+  width: 280px;
   background-color: $bg-green;
   margin-top: 40px;
-  margin-bottom: 38px;
+  margin-bottom: 48px;
+
+  @media (min-width: $tablet-width) {
+    width: 708px;
+    height: 200px;
+    margin-bottom: 70px;
+  }
 }
 
 .gift__slogan {
@@ -13,5 +20,11 @@
   width: 161px;
   text-align: center;
   padding-top: 186px;
-  margin-left: 78px;
+  margin-left: 58px;
+
+  @media (min-width: $tablet-width) {
+    text-align: left;
+    padding-top: 72px;
+    margin-left: 394px;
+  }
 }
