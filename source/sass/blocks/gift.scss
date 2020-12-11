@@ -1,19 +1,16 @@
 .gift {
-  height: 289px;
-  width: 280px;
+  min-height: 289px;
   background-color: $bg-green;
-  margin-top: 60px;
+  margin-top: 40px;
   margin-bottom: 48px;
 
   @media (min-width: $tablet-width) {
-    width: 708px;
-    height: 200px;
+    min-height: 200px;
     margin-bottom: 70px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 245px;
-    height: 289px;
+    min-height: 289px;
   }
 }
 
@@ -25,16 +22,15 @@
   width: 161px;
   text-align: center;
   padding-top: 186px;
-  margin-left: 40px;
 
   @media (min-width: $tablet-width) {
     text-align: left;
     padding-top: 72px;
-    margin-left: 394px;
+    margin-left: auto;
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: -70px;
+    margin-left: 0;
     padding-top: 187px;
     text-align: center;
   }

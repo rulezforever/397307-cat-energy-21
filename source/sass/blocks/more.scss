@@ -10,24 +10,25 @@
   margin: 0;
   padding: 0;
   margin-top: 48px;
-  margin-bottom: 50px;
+  margin-bottom: 33px;
 
   @media (min-width: $tablet-width) {
     @include font-set(36px, 36px);
     margin-top: 10px;
-    margin-left: 36px;
+    padding-left: 36px;
     margin-bottom: 108px;
   }
 
   @media (min-width: $desktop-width) {
     margin-top: 25px;
-    margin-left: 0;
+    padding-left: 0;
     margin-bottom: 80px;
   }
 }
 
 .more__list {
   @include list-reset;
+  border-top: 1px solid #cdcdcd;
 
   @media (min-width: $tablet-width) {
     padding: 0 40px;
@@ -35,7 +36,6 @@
 
   @media (min-width: $desktop-width) {
     width: 896px;
-    // height: 288px;
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
@@ -54,6 +54,7 @@
     justify-content: flex-end;
     width: 222px;
     margin-bottom: 5px;
+    margin-left: auto;
   }
 
   @media (min-width: $desktop-width) {
@@ -64,9 +65,9 @@
 }
 
 .more__item {
-  margin-top: 35px;
-  // outline: 5px solid rgba(255, 0, 0, 0.8);
-  // outline-offset: -5px;
+  padding-top: 17px;
+  padding-bottom: 17px;
+  border-bottom: 1px solid #cdcdcd;
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -94,11 +95,6 @@
 
   @media (min-width: $tablet-width) {
     @include font-set(20px, 20px);
-    width: 300px;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 325px;
   }
 }
 
