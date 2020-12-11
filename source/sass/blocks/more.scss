@@ -2,6 +2,12 @@
   @media (min-width: $tablet-width) {
     margin-bottom: 98px;
   }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 }
 
 .more__title {
@@ -23,6 +29,7 @@
     margin-top: 25px;
     padding-left: 0;
     margin-bottom: 80px;
+    flex-basis: 100%;
   }
 }
 
