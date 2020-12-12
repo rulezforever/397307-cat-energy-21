@@ -1,5 +1,13 @@
 .more {
-  padding: 0 20px 20px;
+  @media (min-width: $tablet-width) {
+    margin-bottom: 98px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 }
 
 .more__title {
@@ -7,12 +15,41 @@
   font-family: $primary-font;
   margin: 0;
   padding: 0;
-  margin-top: 48px;
-  margin-bottom: 50px;
+  margin-top: 38px;
+  margin-bottom: 33px;
+
+  @media (min-width: $tablet-width) {
+    @include font-set(36px, 36px);
+    margin-top: 10px;
+    padding-left: 36px;
+    margin-bottom: 88px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 25px;
+    padding-left: 0;
+    margin-bottom: 75px;
+    flex-basis: 100%;
+  }
 }
 
 .more__list {
   @include list-reset;
+  border-top: 1px solid #cdcdcd;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 40px;
+    border: 1px solid #cdcdcd;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 896px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 0;
+    border: none;
+  }
 }
 
 .more__param {
@@ -20,10 +57,42 @@
   display: flex;
   justify-content: space-between;
   margin-bottom: 15px;
+
+  @media (min-width: $tablet-width) {
+    justify-content: flex-end;
+    width: 222px;
+    margin-bottom: 5px;
+    margin-left: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    justify-content: space-between;
+    width: 285px;
+    margin-bottom: 0;
+  }
 }
 
 .more__item {
-  margin-top: 35px;
+  padding-top: 17px;
+  padding-bottom: 17px;
+  border-bottom: 1px solid #cdcdcd;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    justify-content: flex-start;
+    align-items: center;
+    padding: 17px 0;
+    margin: 0;
+    margin-bottom: 0;
+    border-top: 1px solid #cdcdcd;
+    box-sizing: border-box;
+  }
 }
 
 .more__product {
@@ -31,6 +100,10 @@
   font-family: $primary-font;
   text-transform: uppercase;
   color: $special-dark-grey2;
+
+  @media (min-width: $tablet-width) {
+    @include font-set(20px, 20px);
+  }
 }
 
 .more__term {
@@ -38,6 +111,15 @@
   font-family: $secondary-font;
   color: $special-dark-grey;
   margin-top: 7px;
+
+  @media (min-width: $tablet-width) {
+    @include font-set(16px, 20px);
+    margin-top: 4px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 10px;
+  }
 }
 
 .more__desc {
@@ -49,10 +131,30 @@
   margin-top: 7px;
   text-align: right;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    width: 90px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 15px;
+    text-align: left;
+    width: 40px;
+  }
 }
 
 .more__button {
   @include center;
   @include font-set(16px, 16px, 400);
   margin-top: 18px;
+
+  @media (min-width: $tablet-width) {
+    width: 632px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 244px;
+    margin-left: 40px;
+    margin-top: 0;
+  }
 }
