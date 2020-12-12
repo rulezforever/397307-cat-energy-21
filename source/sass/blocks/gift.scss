@@ -7,6 +7,7 @@
   @media (min-width: $tablet-width) {
     min-height: 200px;
     margin-bottom: 70px;
+    margin-top: 60px;
   }
 
   @media (min-width: $desktop-width) {
@@ -35,5 +36,6 @@
     margin-left: 0;
     padding-top: 187px;
     text-align: center;
+    padding-left: 40px;
   }
 }
