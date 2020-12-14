@@ -75,12 +75,61 @@
     padding-top: 45px;
     padding-left: 57px;
   }
+
+  &--weight {
+    .example__number {
+      margin-left: 42px;
+      margin-top: 5px;
+      margin-bottom: 8px;
+      position: relative;
+
+      &::before {
+        content: "";
+        position: absolute;
+        left: -40px;
+        top: -16px;
+        width: 124px;
+        height: 56px;
+        background-image: url("../../img/weight-back.svg");
+        background-repeat: no-repeat;
+      }
+    }
+
+    .example__text {
+      margin-left: 30px;
+    }
+  }
+
+  &--days {
+    .example__number {
+      margin-left: 82px;
+      margin-top: 5px;
+      margin-bottom: 8px;
+      position: relative;
+
+      &::before {
+        content: "";
+        position: absolute;
+        left: -20px;
+        top: -16px;
+        width: 124px;
+        height: 56px;
+        background-image: url("../../img/weight-back.svg");
+        background-repeat: no-repeat;
+      }
+    }
+
+    .example__text {
+      margin-left: 95px;
+    }
+  }
 }
 
 .example__number {
   @include font-set(24px, 24px, 400);
   font-family: $primary-font;
   text-transform: uppercase;
+
 
   @media (min-width: $tablet-width) {
     @include font-set(30px, 37px);
@@ -93,6 +142,7 @@
   text-align: center;
   width: 59px;
 
+
   @media (min-width: $tablet-width) {
     @include font-set(14px, 14px);
     width: 130px;
@@ -104,6 +154,8 @@
   font-family: $primary-font;
   text-transform: uppercase;
   text-align: center;
+  margin-top: 5px;
+  margin-bottom: 40px;
 
   @media (min-width: $tablet-width) {
     @include font-set(20px, 20px);
@@ -119,7 +171,9 @@
 }
 
 .example__image {
-  height: 300px;
+  height: 232px;
+  object-fit: cover;
+  margin-bottom: 28px;
 
   @media (min-width: $tablet-width) {
     width: 690px;
@@ -141,4 +195,29 @@
   @media (min-width: $tablet-width) {
     @include font-set(20px, 30px);
   }
+}
+
+.example__bar {
+  width: 84px;
+  height: 14px;
+  background: $white;
+  border: 1px solid $border-grey3;
+  box-sizing: border-box;
+  border-radius: 6px;
+}
+
+.example__toggle {
+  width: 35px;
+  height: 6px;
+  background: $basic-font;
+  border-radius: 6px;
+  margin-top: 3px;
+  margin-left: 5px;
+}
+
+.example__slider {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 35px;
+  margin-bottom: 34px;
 }

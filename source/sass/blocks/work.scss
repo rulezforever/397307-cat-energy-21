@@ -64,6 +64,65 @@
     }
   }
 
+  &--leaf {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: -80px;
+      top: 0;
+      width: 60px;
+      height: 60px;
+      background-image: url("../../img/leaf.svg");
+      background-repeat: no-repeat;
+    }
+  }
+
+  &--wash {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: -80px;
+      top: 2px;
+      width: 60px;
+      height: 60px;
+      background-image: url("../../img/wash.svg");
+      background-repeat: no-repeat;
+    }
+  }
+
+  &--eat {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: -80px;
+      top: 2px;
+      width: 60px;
+      height: 60px;
+      background-image: url("../../img/eat.svg");
+      background-repeat: no-repeat;
+    }
+  }
+
+  &--clock {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: -80px;
+      top: 2px;
+      width: 60px;
+      height: 60px;
+      background-image: url("../../img/clock.svg");
+      background-repeat: no-repeat;
+    }
+  }
 
   @media (min-width: $tablet-width) {
     width: 250px;

@@ -19,6 +19,27 @@
 
 .page-header__logo {
   background-color: $white;
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 12px;
+    width: 34px;
+    height: 38px;
+    background-image: url("../../img/logo-mobile.svg");
+    background-repeat: no-repeat;
+  }
+
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 
   @media (min-width: $tablet-width) {
     padding: 20px 0;
@@ -27,4 +48,11 @@
   @media (min-width: $desktop-width) {
     margin-top: 35px;
   }
+}
+
+.page-header__logo img {
+  margin-top: 24px;
+  margin-left: 90px;
+  margin-bottom: 20px;
+  position: relative;
 }
