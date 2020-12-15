@@ -9,16 +9,28 @@
   @include font-set(16px, 18px, 400);
   font-family: $secondary-font;
   color: $special-dark-grey;
-  position: relative;
+  display: flex;
+  align-items: center;
 
-  &::after {
-    content: "";
-    position: absolute;
-    left: 253px;
-    top: -3px;
-    width: 27px;
-    height: 34px;
-    background-image: url("../../img/logo-mobile-html1.svg");
-    background-repeat: no-repeat;
+  &:active {
+    opacity: 0.3;
+  }
+
+  &:hover .copyright__link-icon {
+    stroke: $basic-font;
+  }
+
+  &:active .copyright__link-icon {
+    opacity: 0.3;
   }
 }
+
+.copyright__link-icon {
+  margin-left: 138px;
+
+  @media (min-width: $tablet-width) {
+
+    margin-left: 25px;
+  }
+}
+

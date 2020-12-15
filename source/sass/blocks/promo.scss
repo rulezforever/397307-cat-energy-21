@@ -5,7 +5,7 @@
   margin-bottom: 20px;
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 340px;
+    margin: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -18,13 +18,13 @@
   background-image: url("../../img/index-background-desktop2.png");
   background-position: top;
   background-repeat: no-repeat;
-
-
   display: flex;
   flex-direction: column;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     background-color: $white;
+    background-image: none;
   }
 }
 
@@ -41,7 +41,7 @@
     text-align: left;
     color: $black;
     width: 415px;
-    margin-top: 5px;
+    margin-top: 8px;
     padding-left: 87px;
   }
 
@@ -62,7 +62,8 @@
     @include font-set(20px, 20px);
     text-align: left;
     color: $black;
-    margin-top: 41px;
+    margin-top: 32px;
+    margin-bottom: 20px;
     padding-left: 87px;
   }
 
@@ -81,8 +82,9 @@
     @include font-set(20px, 20px, 400);
     width: 244px;
     padding: 17px 0;
-    margin-top: 49px;
-    margin-left: 82px;
+    position: absolute;
+    top: 267px;
+    left: 112px;
   }
 
   @media (min-width: $desktop-width) {
@@ -101,11 +103,12 @@
 }
 
 .promo__image {
-  margin-bottom: 5px;
+  margin-bottom: 1px;
 
   @media (min-width: $tablet-width) {
     width: 709px;
-    height: 510px;
+    height: 609px;
+    margin-bottom: 0;
   }
 
   @media (min-width: $desktop-width) {

@@ -67,7 +67,7 @@
   display: inline-block;
 
   @media (min-width: $tablet-width) {
-    padding-left: 35px;
+    padding-left: 15px;
     padding-top: 30px;
   }
 
@@ -83,6 +83,10 @@
       margin-bottom: 8px;
       position: relative;
 
+      @media (min-width: $tablet-width) {
+        margin-left: 40px;
+      }
+
       &::before {
         content: "";
         position: absolute;
@@ -92,11 +96,23 @@
         height: 56px;
         background-image: url("../../img/weight-back.svg");
         background-repeat: no-repeat;
+
+        @media (min-width: $tablet-width) {
+          left: -55px;
+          top: -20px;
+          width: 162px;
+          height: 72px;
+          background-image: url("../../img/weight-back-tablet.svg");
+        }
       }
     }
 
     .example__text {
       margin-left: 30px;
+
+      @media (min-width: $tablet-width) {
+        margin-left: 0;
+      }
     }
   }
 
@@ -107,6 +123,10 @@
       margin-bottom: 8px;
       position: relative;
 
+      @media (min-width: $tablet-width) {
+        margin-left: 70px;
+      }
+
       &::before {
         content: "";
         position: absolute;
@@ -116,11 +136,23 @@
         height: 56px;
         background-image: url("../../img/weight-back.svg");
         background-repeat: no-repeat;
+
+        @media (min-width: $tablet-width) {
+          left: -30px;
+          top: -20px;
+          width: 162px;
+          height: 72px;
+          background-image: url("../../img/days-back-tablet.svg");
+        }
       }
     }
 
     .example__text {
       margin-left: 95px;
+
+      @media (min-width: $tablet-width) {
+        margin-left: 55px;
+      }
     }
   }
 }
@@ -161,6 +193,8 @@
     @include font-set(20px, 20px);
     width: 175px;
     text-align: right;
+    padding-top: 30px;
+    line-height: 1.5;
   }
 
   @media (min-width: $desktop-width) {
@@ -178,6 +212,7 @@
   @media (min-width: $tablet-width) {
     width: 690px;
     height: 560px;
+    margin-bottom: 18px;
   }
 
   @media (min-width: $desktop-width) {
@@ -204,6 +239,13 @@
   border: 1px solid $border-grey3;
   box-sizing: border-box;
   border-radius: 6px;
+
+  @media (min-width: $tablet-width) {
+    width: 428px;
+    height: 6px;
+    background: $border-grey3;
+    margin-top: 5px;
+  }
 }
 
 .example__toggle {
@@ -213,6 +255,17 @@
   border-radius: 6px;
   margin-top: 3px;
   margin-left: 5px;
+
+  @media (min-width: $tablet-width) {
+    width: 8px;
+    height: 8px;
+    margin-top: -15px;
+    margin-left: 197px;
+    border: 13px solid $white;
+    background-color: $basic-font;
+    border-radius: 50%;
+    filter: drop-shadow(0 1px 3px rgba($black, 0.16));
+  }
 }
 
 .example__slider {
@@ -220,4 +273,23 @@
   justify-content: space-between;
   padding: 0 35px;
   margin-bottom: 34px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 63px;
+    align-items: center;
+    margin-bottom: 70px;
+  }
+}
+
+.example__list {
+  @media (min-width: $tablet-width) {
+    width: 50%;
+  }
+}
+
+.example__container {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
 }

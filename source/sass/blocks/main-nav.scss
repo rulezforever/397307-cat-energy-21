@@ -3,7 +3,6 @@
   position: relative;
 
   @media (min-width: $tablet-width) {
-    width: auto;
     padding: 5px 0;
     display: flex;
     flex-wrap: wrap;
@@ -60,7 +59,7 @@
         content: "";
         position: absolute;
         right: 0;
-        bottom: 29px;
+        bottom: 22px;
         left: 0;
         height: 2px;
         background: $basic-font;
@@ -79,6 +78,15 @@
   @media (min-width: $desktop-width) {
     @include font-set(20px, 30px, 400);
     // color: $white;
+  }
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
 

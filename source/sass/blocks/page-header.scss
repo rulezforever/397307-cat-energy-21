@@ -43,6 +43,15 @@
 
   @media (min-width: $tablet-width) {
     padding: 20px 0;
+
+    &::before {
+      display: none;
+    }
+
+    img {
+      width: 174px;
+      height: 52px;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -55,4 +64,9 @@
   margin-left: 90px;
   margin-bottom: 20px;
   position: relative;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
 }
+
