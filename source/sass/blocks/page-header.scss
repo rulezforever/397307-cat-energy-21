@@ -10,11 +10,6 @@
   flex-wrap: wrap;
   justify-content: space-between;
   align-content: center;
-
-
-  //  @media (min-width: $desktop-width) {
-  //     padding: 0 110px;
-  //  }
 }
 
 .page-header__logo {
@@ -28,7 +23,7 @@
     top: 12px;
     width: 34px;
     height: 38px;
-    background-image: url("../../img/logo-mobile.svg");
+    background-image: url("../img/logo-mobile.svg");
     background-repeat: no-repeat;
   }
 
