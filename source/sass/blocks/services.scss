@@ -59,11 +59,13 @@
       background-repeat: no-repeat;
 
       @media (min-width: $tablet-width) {
-        left: 447px;
+        left: auto;
+        right: 60px;
         top: 77px;
         width: 200px;
         height: 211px;
-        background-image: url("../img/cat-back-tablet.svg");
+        background-image: url("../img/cat-back.svg");
+        background-size: contain;
       }
     }
   }
@@ -94,7 +96,8 @@
         top: 90px;
         width: 268px;
         height: 200px;
-        background-image: url("../img/cat-back2-tablet.svg");
+        background-image: url("../img/cat-back2.svg");
+        background-size: contain;
       }
     }
   }
@@ -153,6 +156,28 @@
   text-transform: uppercase;
   position: relative;
 
+  &::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: 118px;
+    top: 7px;
+    border-top: 6px solid transparent;
+    border-bottom: 6px solid transparent;
+    border-left: 6px solid $black;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 18px;
+    height: 2px;
+    left: 100px;
+    top: 12px;
+    background: $black;
+  }
+
   @media (min-width: $tablet-width) {
     @include font-set(20px, 30px);
   }
@@ -164,13 +189,5 @@
 
   &:active {
     opacity: 0.3;
-  }
-}
-
-.services__link-icon {
-  margin-left: 12px;
-
-  @media (min-width: $tablet-width) {
-    margin-left: 22px;
   }
 }

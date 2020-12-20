@@ -1,7 +1,8 @@
 .page-footer {
-  min-height: 236px;
+  // min-height: 236px;
   background-color: $basic-grey;
-  padding: 40px 0;
+  // padding: 40px 0;
+  padding-top: 40px;
 
   @media (min-width: $tablet-width) {
     padding: 60px 0;

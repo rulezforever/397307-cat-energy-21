@@ -1,17 +1,19 @@
-
-
 .social__list {
   @include list-reset;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  width: 130px;
-  margin: 20px auto;
+  // width: 130px;
+  margin: 20px;
 
   @media (min-width: $tablet-width) {
     margin: 0;
     margin-left: 95px;
   }
+}
+
+.social__item {
+  margin: 0 17px;
 }
 
 .social__link {

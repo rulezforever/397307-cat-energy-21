@@ -3,6 +3,7 @@
   font-family: $secondary-font;
   color: $black;
   background-color: $bg-grey;
+  padding-bottom: 2px;
 
   @media (min-width: $tablet-width) {
     background-color: $white;
@@ -32,7 +33,7 @@
   font-family: $primary-font;
   font-style: normal;
   margin: 0;
-  margin-bottom: 15px;
+  margin-bottom: 18px;
   padding-top: 28px;
   width: 100%;
 
@@ -51,7 +52,7 @@
 .example__description {
   color: $special-dark-grey;
   width: 275px;
-  margin-bottom: 25px;
+  margin-bottom: 12px;
 
   @media (min-width: $tablet-width) {
     @include font-set(16px, 24px);
@@ -64,7 +65,15 @@
 }
 
 .example__item {
-  display: inline-block;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  border: 1px solid $border-grey3;
+  box-sizing: border-box;
+  border-radius: 3px;
+  width: 124px;
 
   @media (min-width: $tablet-width) {
     padding-left: 15px;
@@ -75,93 +84,16 @@
     padding-top: 45px;
     padding-left: 57px;
   }
-
-  &--weight {
-    .example__number {
-      margin-left: 42px;
-      margin-top: 5px;
-      margin-bottom: 8px;
-      position: relative;
-
-      @media (min-width: $tablet-width) {
-        margin-left: 40px;
-      }
-
-      &::before {
-        content: "";
-        position: absolute;
-        left: -40px;
-        top: -16px;
-        width: 124px;
-        height: 56px;
-        background-image: url("../img/weight-back.svg");
-        background-repeat: no-repeat;
-
-        @media (min-width: $tablet-width) {
-          left: -55px;
-          top: -20px;
-          width: 162px;
-          height: 72px;
-          background-image: url("../img/weight-back-tablet.svg");
-        }
-      }
-    }
-
-    .example__text {
-      margin-left: 30px;
-
-      @media (min-width: $tablet-width) {
-        margin-left: 0;
-      }
-    }
-  }
-
-  &--days {
-    .example__number {
-      margin-left: 82px;
-      margin-top: 5px;
-      margin-bottom: 8px;
-      position: relative;
-
-      @media (min-width: $tablet-width) {
-        margin-left: 70px;
-      }
-
-      &::before {
-        content: "";
-        position: absolute;
-        left: -20px;
-        top: -16px;
-        width: 124px;
-        height: 56px;
-        background-image: url("../img/weight-back.svg");
-        background-repeat: no-repeat;
-
-        @media (min-width: $tablet-width) {
-          left: -30px;
-          top: -20px;
-          width: 162px;
-          height: 72px;
-          background-image: url("../img/days-back-tablet.svg");
-        }
-      }
-    }
-
-    .example__text {
-      margin-left: 95px;
-
-      @media (min-width: $tablet-width) {
-        margin-left: 55px;
-      }
-    }
-  }
 }
 
 .example__number {
   @include font-set(24px, 24px, 400);
   font-family: $primary-font;
   text-transform: uppercase;
-
+  padding: 5px 20px;
+  transform: translateY(8px);
+  width: 85px;
+  text-align: center;
 
   @media (min-width: $tablet-width) {
     @include font-set(30px, 37px);
@@ -173,6 +105,11 @@
   text-transform: lowercase;
   text-align: center;
   width: 59px;
+  padding: 0 20px;
+  transform: translateY(12px);
+  margin: 0;
+  background-color: $bg-grey;
+  margin-left: 10px;
 
 
   @media (min-width: $tablet-width) {
@@ -233,6 +170,10 @@
 }
 
 .example__bar {
+  display: flex;
+  align-items: center;
+  padding: 0 6px;
+  margin-top: 5px;
   width: 84px;
   height: 14px;
   background: $white;
@@ -253,8 +194,6 @@
   height: 6px;
   background: $basic-font;
   border-radius: 6px;
-  margin-top: 3px;
-  margin-left: 5px;
 
   @media (min-width: $tablet-width) {
     width: 8px;
@@ -282,6 +221,10 @@
 }
 
 .example__list {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 30px;
+
   @media (min-width: $tablet-width) {
     width: 50%;
   }
