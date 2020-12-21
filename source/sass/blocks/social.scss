@@ -8,12 +8,16 @@
 
   @media (min-width: $tablet-width) {
     margin: 0;
-    margin-left: 95px;
+    margin-left: 30px;
   }
 }
 
 .social__item {
   margin: 0 17px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 12px;
+  }
 }
 
 .social__link {
@@ -27,22 +31,22 @@
     opacity: 0.3;
   }
 
-  &--vkontakte {
-    @media (min-width: $desktop-width) {
+  &--vkontakte .social__link-icon {
+    @media (min-width: $tablet-width) {
       width: 30px;
       height: 22px;
     }
   }
 
-  &--instagram {
-    @media (min-width: $desktop-width) {
+  &--instagram .social__link-icon {
+    @media (min-width: $tablet-width) {
       width: 23px;
       height: 23px;
     }
   }
 
-  &--facebook {
-    @media (min-width: $desktop-width) {
+  &--facebook .social__link-icon {
+    @media (min-width: $tablet-width) {
       width: 28px;
       height: 33px;
     }

@@ -68,7 +68,7 @@
         content: "";
         position: absolute;
         right: 0;
-        bottom: 22px;
+        bottom: 9px;
         left: 0;
         height: 2px;
         background: $basic-font;
@@ -133,6 +133,10 @@
 
 .main-nav--opened .main-nav__list {
   display: block;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
 }
 
 .main-nav--opened .main-nav__toggle {
