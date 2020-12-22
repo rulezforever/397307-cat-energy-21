@@ -6,6 +6,10 @@
   @media (min-width: $tablet-width) {
     min-height: 201px;
   }
+
+  @media (min-width: $desktop-width) {
+    min-height: 0;
+  }
 }
 
 .contacts__wrapper {
@@ -20,8 +24,13 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 110px;
     width: 570px;
+    min-height: 201px;
+    background-color: $white;
+    position: absolute;
+    top: 92px;
+    left: 110px;
+    padding: 65px 45px;
   }
 }
 

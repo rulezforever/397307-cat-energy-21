@@ -74,6 +74,12 @@
         background: $basic-font;
       }
     }
+
+    @media (min-width: $desktop-width) {
+      &::after {
+        background: $white;
+      }
+    }
   }
 }
 
@@ -86,7 +92,7 @@
 
   @media (min-width: $desktop-width) {
     @include font-set(20px, 30px, 400);
-    // color: $white;
+    color: $white;
   }
 
   &:hover,

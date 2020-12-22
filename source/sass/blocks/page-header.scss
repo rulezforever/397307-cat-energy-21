@@ -10,6 +10,10 @@
   flex-wrap: wrap;
   justify-content: space-between;
   align-content: center;
+
+  @media (min-width: $desktop-width) {
+    background-color: transparent;
+  }
 }
 
 .page-header__logo {
@@ -62,5 +66,10 @@
 
   @media (min-width: $tablet-width) {
     margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 202px;
+    height: 59px;
   }
 }

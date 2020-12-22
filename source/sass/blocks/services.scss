@@ -34,7 +34,7 @@
 
   @media (min-width: $desktop-width) {
     width: 570px;
-    padding: 50px 0;
+    padding: 55px 0;
   }
 
   &--slim {
@@ -45,6 +45,10 @@
 
       @media (min-width: $tablet-width) {
         padding-left: 5px;
+      }
+
+      @media (min-width: $desktop-width) {
+        padding-left: 213px;
       }
     }
 
@@ -64,8 +68,15 @@
         top: 77px;
         width: 200px;
         height: 211px;
-        background-image: url("../img/cat-back.svg");
         background-size: contain;
+      }
+
+      @media (min-width: $desktop-width) {
+        left: 52px;
+        right: auto;
+        top: 41px;
+        width: 100px;
+        height: 106px;
       }
     }
   }
@@ -78,6 +89,10 @@
 
       @media (min-width: $tablet-width) {
         padding-left: 4px;
+      }
+
+      @media (min-width: $desktop-width) {
+        padding-left: 213px;
       }
     }
 
@@ -96,8 +111,15 @@
         top: 90px;
         width: 268px;
         height: 200px;
-        background-image: url("../img/cat-back2.svg");
         background-size: contain;
+      }
+
+      @media (min-width: $desktop-width) {
+        left: 33px;
+        right: auto;
+        top: 47px;
+        width: 134px;
+        height: 100px;
       }
     }
   }
@@ -121,8 +143,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    text-align: center;
-    margin-top: 15px;
+    margin-top: 12px;
   }
 }
 
@@ -170,6 +191,10 @@
     @media (min-width: $tablet-width) {
       left: 152px;
     }
+
+    @media (min-width: $desktop-width) {
+      left: 206px;
+    }
   }
 
   &::before {
@@ -183,6 +208,10 @@
 
     @media (min-width: $tablet-width) {
       left: 134px;
+    }
+
+    @media (min-width: $desktop-width) {
+      left: 188px;
     }
   }
 
