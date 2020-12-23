@@ -224,6 +224,29 @@
     margin-top: 85px;
   }
 
+  &:hover,
+  &:focus {
+    @media (min-width: $tablet-width) {
+      &::before {
+        width: 26px;
+      }
+
+      &::after {
+        left: 158px;
+      }
+    }
+
+    @media (min-width: $desktop-width) {
+      &::before {
+        width: 26px;
+      }
+
+      &::after {
+        left: 212px;
+      }
+    }
+  }
+
   &:active {
     opacity: 0.3;
   }

@@ -3,7 +3,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  // width: 130px;
   margin: 20px;
 
   @media (min-width: $tablet-width) {
@@ -24,7 +23,7 @@
   display: block;
 
   &:hover .social__link-icon {
-    stroke: $basic-font;
+    fill: $basic-font;
   }
 
   &:active .social__link-icon {
@@ -51,4 +50,8 @@
       height: 33px;
     }
   }
+}
+
+.social__link-icon {
+  fill: $special-grey;
 }

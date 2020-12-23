@@ -45,7 +45,6 @@
     gap: 35px;
     padding-bottom: 30px;
     margin-bottom: 5px;
-    // border-bottom: 1px solid $line-grey;
   }
 
   @media (min-width: $desktop-width) {
@@ -80,8 +79,6 @@
       position: absolute;
       left: 115px;
       top: -8px;
-      width: 112px;
-      height: 280px;
       z-index: -1;
     }
   }
@@ -104,7 +101,6 @@
         top: 31px;
         width: 80px;
         height: 80px;
-        background-image: url("../img/leaf.svg");
         background-size: contain;
       }
     }
@@ -128,7 +124,6 @@
         top: 31px;
         width: 80px;
         height: 80px;
-        background-image: url("../img/wash.svg");
         background-size: contain;
       }
     }
@@ -152,7 +147,6 @@
         top: 31px;
         width: 80px;
         height: 80px;
-        background-image: url("../img/eat.svg");
         background-size: contain;
       }
     }
@@ -176,7 +170,6 @@
         top: 31px;
         width: 80px;
         height: 80px;
-        background-image: url("../img/clock.svg");
         background-size: contain;
       }
     }

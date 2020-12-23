@@ -8,9 +8,6 @@
 
   @media (min-width: $tablet-width) {
     padding: 5px 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
     gap: 66px;
   }
 
@@ -26,8 +23,6 @@
   padding: 0;
   display: none;
   width: 100%;
-  // margin: 0 -20px; не получается сделать линии на всю ширину
-
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -37,10 +32,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    // margin-top: 35px;
     width: 475px;
   }
 }
@@ -50,14 +41,11 @@
   min-height: 66px;
   text-align: center;
   border-bottom: 1px solid $line-grey;
-  margin: 0;
+  margin: 0 -20px;
 
   @media (min-width: $tablet-width) {
     border: none;
-  }
-
-  @media (min-width: $desktop-width) {
-    border: none;
+    margin: 0;
   }
 
   &--active {

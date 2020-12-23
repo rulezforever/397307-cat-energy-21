@@ -17,19 +17,15 @@
   }
 
   &:hover .copyright__link-icon {
-    stroke: $basic-font;
-  }
-
-  &:active .copyright__link-icon {
-    opacity: 0.3;
+    fill: $basic-font;
   }
 }
 
 .copyright__link-icon {
   margin-left: 138px;
+  fill: $special-grey;
 
   @media (min-width: $tablet-width) {
-
     margin-left: 25px;
   }
 }
