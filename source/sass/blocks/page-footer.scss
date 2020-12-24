@@ -1,10 +1,11 @@
 .page-footer {
-  min-height: 236px;
+  // min-height: 236px;
   background-color: $basic-grey;
-  padding: 40px 0;
+  // padding: 40px 0;
+  padding-top: 40px;
 
   @media (min-width: $tablet-width) {
-    padding: 60px 0;
+    padding: 50px 0;
   }
 }
 
@@ -14,19 +15,31 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-content: center;
+    align-items: center;
   }
 }
 
 .page-footer__logo {
   display: block;
   width: 280px;
-  height: 95px;
+  text-align: center;
+  padding-bottom: 25px;
   border-bottom: 1px solid $border-grey;
+  cursor: pointer;
 
   @media (min-width: $tablet-width) {
     border: none;
-    width: 140px;
+    width: 128px;
+    padding-bottom: 0;
+  }
+
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
   }
 }
 
@@ -44,5 +57,13 @@
   @media (min-width: $tablet-width) {
     border: none;
     width: 180px;
+  }
+}
+
+.page-footer__copyright {
+  padding: 20px 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
   }
 }

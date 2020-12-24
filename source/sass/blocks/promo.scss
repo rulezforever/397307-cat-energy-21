@@ -3,21 +3,44 @@
   min-height: 480px;
   position: relative;
   margin-bottom: 20px;
+  background-image: linear-gradient(to top, rgba($bg-green, 0.85), rgba($bg-green, 0.85)),
+    url("../img/index-background-desktop2.png");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: 320px 302px;
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 340px;
+    margin: 0;
+    padding-bottom: 370px;
+    background-image: none;
   }
 
   @media (min-width: $desktop-width) {
-    padding-bottom: 20px;
+    padding-bottom: 81px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -135px;
+      right: 0;
+      background-image: linear-gradient(to top, rgba($bg-green, 0.85), rgba($bg-green, 0.85)),
+        url("../img/index-background-desktop1.png");
+      background-repeat: no-repeat;
+      background-position: top;
+      z-index: -1;
+      width: 720px;
+      height: 694px;
+    }
   }
 }
 
 .promo__wrapper {
-  background-color: rgba($bg-green, 0.85);
+  display: flex;
+  flex-direction: column;
+  position: relative;
 
   @media (min-width: $tablet-width) {
-    background-color: $white;
+    background-color: transparent;
   }
 }
 
@@ -27,14 +50,13 @@
   color: $white;
   padding-top: 27px;
   margin: 0;
-  margin-bottom: 25px;
+  margin-bottom: 12px;
 
   @media (min-width: $tablet-width) {
     @include font-set(60px, 60px);
     text-align: left;
     color: $black;
-    width: 415px;
-    margin-top: 5px;
+    margin-top: 8px;
     padding-left: 87px;
   }
 
@@ -49,52 +71,69 @@
   text-align: center;
   color: $white;
   text-transform: uppercase;
-  margin-top: 25px;
+  margin-bottom: 28px;
 
   @media (min-width: $tablet-width) {
     @include font-set(20px, 20px);
     text-align: left;
     color: $black;
-    margin-top: 41px;
+    margin-top: 32px;
+    margin-bottom: 20px;
     padding-left: 87px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 40px;
+    margin-top: 30px;
     padding-left: 80px;
+    margin-bottom: 0;
   }
 }
 
 .promo__link {
   @include center;
   width: 280px;
+  order: 2;
 
   @media (min-width: $tablet-width) {
     @include font-set(20px, 20px, 400);
     width: 244px;
     padding: 17px 0;
-    margin-top: 49px;
     margin-left: 82px;
+    margin-top: 28px;
   }
 
   @media (min-width: $desktop-width) {
     margin-top: 52px;
     margin-left: 80px;
   }
+
+  &:hover,
+  &:focus {
+    background-color: $hover-green;
+  }
+
+  &:active {
+    color: rgba($white, 0.3);
+  }
 }
 
 .promo__image {
+  margin-bottom: 1px;
+
   @media (min-width: $tablet-width) {
     width: 709px;
-    height: 510px;
+    height: 609px;
+    margin-bottom: 0;
     position: absolute;
+    top: 238px;
+    left: 28px;
+    z-index: -1;
   }
 
   @media (min-width: $desktop-width) {
-    width: 720px;
-    height: 566px;
-    position: absolute;
-    top: -65px;
-    right: 200px;
+    width: 552px;
+    height: 499px;
+    top: 6px;
+    left: 558px;
   }
 }

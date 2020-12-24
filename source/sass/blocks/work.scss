@@ -4,8 +4,13 @@
   color: $black;
   margin: 0;
 
+  @media (min-width: $tablet-width) {
+    border-bottom: 1px solid $line-grey;
+  }
+
   @media (min-width: $desktop-width) {
     min-height: 400px;
+    border: none;
   }
 }
 
@@ -23,7 +28,7 @@
 
   @media (min-width: $desktop-width) {
     @include font-set(60px, 60px);
-    margin-top: 25px;
+    margin-top: 18px;
   }
 }
 
@@ -31,6 +36,7 @@
   @include list-reset;
   padding-left: 80px;
   margin-bottom: 50px;
+  counter-reset: item;
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -38,8 +44,7 @@
     padding-left: 0;
     gap: 35px;
     padding-bottom: 30px;
-
-    border-bottom: 1px solid $line-grey;
+    margin-bottom: 5px;
   }
 
   @media (min-width: $desktop-width) {
@@ -64,6 +69,111 @@
     }
   }
 
+  @media (min-width: $tablet-width) {
+    &::after {
+      @include font-set(280px, 280px, 400);
+      content: counter(item);
+      counter-increment: item;
+      font-family: $primary-font;
+      color: $basic-grey;
+      position: absolute;
+      left: 115px;
+      top: -8px;
+      z-index: -1;
+    }
+  }
+
+  &--leaf {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: -80px;
+      top: 0;
+      width: 60px;
+      height: 60px;
+      background-image: url("../img/leaf.svg");
+      background-repeat: no-repeat;
+
+      @media (min-width: $tablet-width) {
+        left: 0;
+        top: 31px;
+        width: 80px;
+        height: 80px;
+        background-size: contain;
+      }
+    }
+  }
+
+  &--wash {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: -80px;
+      top: 2px;
+      width: 60px;
+      height: 60px;
+      background-image: url("../img/wash.svg");
+      background-repeat: no-repeat;
+
+      @media (min-width: $tablet-width) {
+        left: 2px;
+        top: 31px;
+        width: 80px;
+        height: 80px;
+        background-size: contain;
+      }
+    }
+  }
+
+  &--eat {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: -80px;
+      top: 2px;
+      width: 60px;
+      height: 60px;
+      background-image: url("../img/eat.svg");
+      background-repeat: no-repeat;
+
+      @media (min-width: $tablet-width) {
+        left: 0;
+        top: 31px;
+        width: 80px;
+        height: 80px;
+        background-size: contain;
+      }
+    }
+  }
+
+  &--clock {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: -80px;
+      top: 2px;
+      width: 60px;
+      height: 60px;
+      background-image: url("../img/clock.svg");
+      background-repeat: no-repeat;
+
+      @media (min-width: $tablet-width) {
+        left: 2px;
+        top: 31px;
+        width: 80px;
+        height: 80px;
+        background-size: contain;
+      }
+    }
+  }
 
   @media (min-width: $tablet-width) {
     width: 250px;
