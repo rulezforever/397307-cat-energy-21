@@ -1,7 +1,7 @@
 
 .copyright {
   @media (min-width: $tablet-width) {
-    // padding-top: -5px;
+    display: flex;
   }
 }
 
@@ -11,6 +11,7 @@
   color: $special-dark-grey;
   display: flex;
   align-items: center;
+  gap: 139px;
 
   &:active {
     opacity: 0.3;
@@ -19,13 +20,12 @@
   &:hover .copyright__link-icon {
     fill: $basic-font;
   }
+
+  @media (min-width: $tablet-width) {
+    gap: 25px;
+  }
 }
 
 .copyright__link-icon {
-  margin-left: 138px;
   fill: $special-grey;
-
-  @media (min-width: $tablet-width) {
-    margin-left: 25px;
-  }
 }

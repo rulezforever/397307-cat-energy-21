@@ -30,7 +30,7 @@
     position: absolute;
     top: 92px;
     left: 110px;
-    padding: 65px 45px;
+    padding: 0;
   }
 }
 
@@ -88,6 +88,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 30px;
+    padding: 65px 75px;
   }
 }
