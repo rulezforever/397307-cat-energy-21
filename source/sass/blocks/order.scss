@@ -229,6 +229,14 @@
   }
 }
 
+.order__radio + label:hover::before {
+  box-shadow: 0 0 0 1px $hover-grey;
+}
+
+.order__radio:disabled + label::before {
+  opacity: 0.3;
+}
+
 .order__input {
   height: 46px;
   padding-left: 15px;
@@ -240,6 +248,19 @@
 
   @media (min-width: $tablet-width) {
     height: 52px;
+  }
+
+  &:hover {
+    border: 1px solid $border-grey3;
+  }
+
+  &:focus {
+    outline: none;
+    border: 2px solid $special-dark-grey;
+  }
+
+  &:invalid {
+    border: 2px solid $error;
   }
 }
 
@@ -430,6 +451,15 @@
   }
 }
 
+.order__check + label:hover::before {
+  border: 1px solid $hover-grey;
+}
+
+.order__check:disabled + label::before,
+.order__check:disabled + label::after {
+  opacity: 0.3;
+}
+
 .order__check:checked + label::after {
   content: "";
   position: absolute;
@@ -495,6 +525,16 @@
     @include font-set(20px, 20px);
     padding: 18px 0;
     width: 568px;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: $hover-green;
+  }
+
+  &:active {
+    color: rgba($white, 0.3);
+    outline: none;
   }
 }
 
