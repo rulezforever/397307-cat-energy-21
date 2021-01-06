@@ -23,7 +23,7 @@
   color: $black;
   width: 135px;
   text-transform: uppercase;
-  margin-top: 20px;
+  margin-top: 15px;
 
   @media (min-width: $tablet-width) {
     @include font-set(20px, 21px);
@@ -42,7 +42,7 @@
   font-family: $secondary-font;
   color: $special-dark-grey;
   width: 135px;
-  padding-top: 5px;
+  padding-top: 0;
 
   @media (min-width: $tablet-width) {
     @include font-set(16px, 20px);

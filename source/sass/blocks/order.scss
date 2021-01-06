@@ -527,13 +527,7 @@
     width: 568px;
   }
 
-  &:hover,
-  &:focus {
-    background-color: $hover-green;
-  }
-
   &:active {
-    color: rgba($white, 0.3);
     outline: none;
   }
 }

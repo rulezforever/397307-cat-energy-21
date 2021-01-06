@@ -107,15 +107,6 @@
     margin-top: 52px;
     margin-left: 80px;
   }
-
-  &:hover,
-  &:focus {
-    background-color: $hover-green;
-  }
-
-  &:active {
-    color: rgba($white, 0.3);
-  }
 }
 
 .promo__image {
