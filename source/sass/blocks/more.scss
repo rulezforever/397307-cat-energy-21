@@ -1,12 +1,23 @@
 .more {
+  border-top: 2px solid;
+  border-image: linear-gradient(to right, transparent 50%, $basic-font 50%) 1 0%;
+
   @media (min-width: $tablet-width) {
-    margin-bottom: 98px;
+    border-top: 2px solid $basic-font;
+    border-image: none;
+    margin-bottom: 75px;
   }
 
   @media (min-width: $desktop-width) {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+
+  &--container {
+    @media (min-width: $desktop-width) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
   }
 }
 
@@ -15,31 +26,35 @@
   font-family: $primary-font;
   margin: 0;
   padding: 0;
-  margin-top: 38px;
-  margin-bottom: 33px;
+  transform: translateY(-17px);
+  width: 247px;
+  background-color: $white;
+  margin-bottom: 18px;
 
   @media (min-width: $tablet-width) {
     @include font-set(36px, 36px);
+    width: 374px;
     margin-top: 10px;
     padding-left: 36px;
-    margin-bottom: 88px;
+    margin-bottom: 46px;
+    transform: translateY(-35px);
   }
 
   @media (min-width: $desktop-width) {
     margin-top: 25px;
-    padding-left: 0;
-    margin-bottom: 75px;
-    flex-basis: 100%;
+    margin-bottom: 30px;
+    padding-left: 40px;
+    transform: translate(-40px, -50px);
   }
 }
 
 .more__list {
   @include list-reset;
-  border-top: 1px solid #cdcdcd;
+  border-top: 1px solid $border-grey3;
 
   @media (min-width: $tablet-width) {
-    padding: 0 40px;
-    border: 1px solid #cdcdcd;
+    padding: 0 38px;
+    border: 1px solid $border-grey3;
   }
 
   @media (min-width: $desktop-width) {
@@ -73,15 +88,17 @@
 }
 
 .more__item {
-  padding-top: 17px;
-  padding-bottom: 17px;
-  border-bottom: 1px solid #cdcdcd;
+  padding-top: 14px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid $border-grey3;
 
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-bottom: 20px;
+    padding-top: 24px;
+    padding-bottom: 32px;
+    border: none;
   }
 
   @media (min-width: $desktop-width) {
@@ -90,7 +107,7 @@
     padding: 17px 0;
     margin: 0;
     margin-bottom: 0;
-    border-top: 1px solid #cdcdcd;
+    border-top: 1px solid $border-grey3;
     box-sizing: border-box;
   }
 }

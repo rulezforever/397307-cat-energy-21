@@ -61,7 +61,7 @@
 
 .example__description {
   color: $special-dark-grey;
-  width: 275px;
+  width: 280px;
   margin-bottom: 12px;
 
   @media (min-width: $tablet-width) {
@@ -198,11 +198,12 @@
 
 .example__image-bottom {
   object-fit: cover;
-  margin-bottom: 28px;
+  margin-bottom: 24px;
   display: block;
-  position: absolute;
-  top: 0;
-  left: 40px;
+  margin-left: 17px;
+  // position: absolute;
+  // top: 0;
+  // left: 40px;
 
   &--hide {
     display: none;
@@ -211,15 +212,15 @@
   @media (min-width: $tablet-width) {
     width: 100%;
     height: 590px;
-    left: 80px;
+    // left: 80px;
     object-fit: contain;
   }
 
   @media (min-width: $desktop-width) {
     width: 100%;
     height: 515px;
-    left: 50px;
-    top: -10px;
+    // left: 50px;
+    // top: -10px;
   }
 }
 

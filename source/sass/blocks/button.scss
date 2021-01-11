@@ -7,4 +7,14 @@
   color: $white;
   width: 280px;
   padding: 10px 0;
+  word-break: break-all;
+
+  &:hover,
+  &:focus {
+    background-color: $hover-green;
+  }
+
+  &:active {
+    color: rgba($white, 0.3);
+  }
 }

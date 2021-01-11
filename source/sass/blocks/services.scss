@@ -9,7 +9,7 @@
   @include list-reset;
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 20px;
+    padding-bottom: 8px;
   }
 
   @media (min-width: $desktop-width) {
@@ -17,6 +17,7 @@
     flex-wrap: wrap;
     gap: 80px;
     margin-top: 80px;
+    padding-bottom: 20px;
   }
 }
 
@@ -138,7 +139,7 @@
   @media (min-width: $tablet-width) {
     @include font-set(36px, 36px);
     text-align: left;
-    margin-top: 45px;
+    margin-top: 47px;
   }
 
   @media (min-width: $desktop-width) {
@@ -157,7 +158,8 @@
     @include font-set(16px, 24px);
     border: none;
     width: 377px;
-    padding-bottom: 32px;
+    padding-bottom: 34px;
+    margin-top: 27px;
   }
 
   @media (min-width: $desktop-width) {
@@ -165,6 +167,16 @@
     width: 467px;
     padding-bottom: 12px;
     padding-left: 50px;
+  }
+
+  &--width {
+    @media (min-width: $tablet-width) {
+      width: 340px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 467px;
+    }
   }
 }
 

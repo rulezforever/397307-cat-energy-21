@@ -10,27 +10,9 @@
   @media (min-width: $desktop-width) {
     min-height: 0;
   }
-}
 
-.contacts__wrapper {
-  padding: 10px 20px;
-  background-color: $white;
-
-  @media (min-width: $tablet-width) {
-    width: 625px;
-    padding: 30px 0;
-    padding-top: 65px;
-    padding-bottom: 10px;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 570px;
-    min-height: 201px;
-    background-color: $white;
-    position: absolute;
-    top: 92px;
-    left: 110px;
-    padding: 0;
+  &--color {
+    background-color: $basic-grey;
   }
 }
 
@@ -41,7 +23,7 @@
   color: $black;
   width: 135px;
   text-transform: uppercase;
-  margin-top: 20px;
+  margin-top: 15px;
 
   @media (min-width: $tablet-width) {
     @include font-set(20px, 21px);
@@ -60,7 +42,7 @@
   font-family: $secondary-font;
   color: $special-dark-grey;
   width: 135px;
-  padding-top: 5px;
+  padding-top: 0;
 
   @media (min-width: $tablet-width) {
     @include font-set(16px, 20px);
@@ -81,13 +63,19 @@
   display: flex;
   flex-wrap: wrap;
   gap: 5px;
+  padding-top: 15px;
 
   @media (min-width: $tablet-width) {
     justify-content: space-between;
     align-items: center;
+    padding: 65px 40px;
   }
 
   @media (min-width: $desktop-width) {
     padding: 65px 75px;
+    position: absolute;
+    background-color: $white;
+    top: 92px;
+    width: 420px;
   }
 }

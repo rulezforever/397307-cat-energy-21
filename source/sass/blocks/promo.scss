@@ -4,10 +4,15 @@
   position: relative;
   margin-bottom: 20px;
   background-image: linear-gradient(to top, rgba($bg-green, 0.85), rgba($bg-green, 0.85)),
-    url("../img/index-background-desktop2.png");
+    url("../img/index-background-mobile@1x.png");
   background-position: top;
   background-repeat: no-repeat;
   background-size: 320px 302px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: linear-gradient(to top, rgba($bg-green, 0.85), rgba($bg-green, 0.85)),
+      url("../img/index-background-mobile@2x.png");
+  }
 
   @media (min-width: $tablet-width) {
     margin: 0;
@@ -24,13 +29,18 @@
       top: -135px;
       right: 0;
       background-image: linear-gradient(to top, rgba($bg-green, 0.85), rgba($bg-green, 0.85)),
-        url("../img/index-background-desktop1.png");
+        url("../img/index-background-desktop@1x.png");
       background-repeat: no-repeat;
       background-position: top;
       background-size: 100%;
       z-index: -1;
       width: 50%;
       height: 694px;
+
+      @media (min-resolution: 2dppx) {
+        background-image: linear-gradient(to top, rgba($bg-green, 0.85), rgba($bg-green, 0.85)),
+          url("../img/index-background-desktop@2x.png");
+      }
     }
   }
 }
@@ -106,15 +116,6 @@
   @media (min-width: $desktop-width) {
     margin-top: 52px;
     margin-left: 80px;
-  }
-
-  &:hover,
-  &:focus {
-    background-color: $hover-green;
-  }
-
-  &:active {
-    color: rgba($white, 0.3);
   }
 }
 
