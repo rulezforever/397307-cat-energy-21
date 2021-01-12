@@ -9,7 +9,7 @@
   width: 100%;
   background-size: contain;
 
-  @media ($retina) {
+  @media (min-resolution: 2dppx) {
     background-image: url("../img/gift-photo-mobile@2x.jpg");
   }
 
@@ -19,7 +19,7 @@
     margin-top: 66px;
     background-image: url("../img/gift-photo-tablet@1x.jpg");
 
-    @media ($retina) {
+    @media (min-resolution: 2dppx) {
       background-image: url("../img/gift-photo-tablet@2x.jpg");
     }
   }
