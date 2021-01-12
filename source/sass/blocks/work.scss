@@ -95,6 +95,7 @@
       top: 0;
       width: 60px;
       height: 60px;
+      background-color: $basic-font;
       background-image: url("../img/leaf.svg");
       background-repeat: no-repeat;
 
@@ -103,7 +104,7 @@
         top: 31px;
         width: 80px;
         height: 80px;
-        background-size: contain;
+        background-position: center;
       }
     }
   }
@@ -118,6 +119,7 @@
       top: 2px;
       width: 60px;
       height: 60px;
+      background-color: $basic-font;
       background-image: url("../img/wash.svg");
       background-repeat: no-repeat;
 
@@ -126,7 +128,7 @@
         top: 31px;
         width: 80px;
         height: 80px;
-        background-size: contain;
+        background-position: center;
       }
     }
   }
@@ -141,6 +143,7 @@
       top: 2px;
       width: 60px;
       height: 60px;
+      background-color: $basic-font;
       background-image: url("../img/eat.svg");
       background-repeat: no-repeat;
 
@@ -149,7 +152,7 @@
         top: 31px;
         width: 80px;
         height: 80px;
-        background-size: contain;
+        background-position: center;
       }
     }
   }
@@ -164,6 +167,7 @@
       top: 2px;
       width: 60px;
       height: 60px;
+      background-color: $basic-font;
       background-image: url("../img/clock.svg");
       background-repeat: no-repeat;
 
@@ -172,7 +176,7 @@
         top: 31px;
         width: 80px;
         height: 80px;
-        background-size: contain;
+        background-position: center;
       }
     }
   }
