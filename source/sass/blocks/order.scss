@@ -259,7 +259,7 @@
     border: 2px solid $special-dark-grey;
   }
 
-  &:invalid {
+  &--error {
     border: 2px solid $error;
   }
 }
@@ -502,6 +502,10 @@
   position: absolute;
   top: 20px;
   right: 15px;
+
+  &--error {
+    fill: $error;
+  }
 }
 
 .order__icon-phone {
@@ -552,6 +556,10 @@
   display: flex;
   align-items: center;
   position: relative;
+
+  &:focus .order__icon-email {
+    fill: $basic-font;
+  }
 
   @media (min-width: $desktop-width) {
     margin-top: 0;
