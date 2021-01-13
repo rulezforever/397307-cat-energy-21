@@ -92,10 +92,10 @@ exports.createWebp = createWebp;
 const sprite = () => {
   return gulp.src("source/img/icons/*.svg")
     .pipe(imagemin([
-      imagemin.svgo( { plugins: {removeViewBox: true} })
+      imagemin.svgo([ { plugins: {removeViewBox: true} }])
     ]))
     .pipe(svgstore())
-    .pipe(rename("sprite.svg"))
+    .pipe(rename("svg-sprite.svg"))
     .pipe(gulp.dest("build/img"));
 }
 
