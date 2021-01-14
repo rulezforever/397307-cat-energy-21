@@ -45,10 +45,18 @@
   }
 
   &--facebook .social__link-icon {
+    fill: none;
+    stroke: $special-grey;
+
     @media (min-width: $tablet-width) {
       width: 28px;
       height: 33px;
     }
+  }
+
+  &--facebook:hover .social__link-icon {
+    fill: none;
+    stroke: $basic-font;
   }
 }
 

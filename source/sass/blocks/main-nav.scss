@@ -110,7 +110,9 @@
 }
 
 .main-nav__item--form a {
-  color: $black;
+  @media (min-width: $desktop-width) {
+    color: $black;
+  }
 }
 
 .main-nav__toggle {

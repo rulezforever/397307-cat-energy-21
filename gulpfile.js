@@ -14,6 +14,7 @@ const webp = require("gulp-webp");
 const svgstore = require("gulp-svgstore");
 const del = require("del");
 const gcmq = require('gulp-group-css-media-queries');
+const mqpacker = require("css-mqpacker");
 
 // Styles
 
@@ -24,12 +25,17 @@ const styles = () => {
     .pipe(sass())
     .pipe(gulp.dest("build/css"))
     .pipe(postcss([
-      autoprefixer()
-    ]))
-    .pipe(gcmq())
-    .pipe(postcss([
+      autoprefixer(),
+      mqpacker({
+        sort: true
+      }),
       csso()
     ]))
+    // .pipe(gcmq())
+    // .pipe(postcss([
+
+    //   csso()
+    // ]))
     .pipe(rename({
       suffix: ".min"
     }))
