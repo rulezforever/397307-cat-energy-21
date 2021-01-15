@@ -26,16 +26,11 @@ const styles = () => {
     .pipe(gulp.dest("build/css"))
     .pipe(postcss([
       autoprefixer(),
-      mqpacker({
-        sort: true
-      }),
+      // mqpacker({
+      //   sort: true
+      // }),
       csso()
     ]))
-    // .pipe(gcmq())
-    // .pipe(postcss([
-
-    //   csso()
-    // ]))
     .pipe(rename({
       suffix: ".min"
     }))

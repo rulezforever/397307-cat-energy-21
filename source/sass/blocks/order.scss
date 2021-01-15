@@ -489,13 +489,13 @@
   border-left: 1px solid $basic-font;
   border-bottom: 1px solid $basic-font;
   box-sizing: border-box;
-  transform: rotate(-50deg);
+  transform: rotate(-45deg);
 
   @media (min-width: $tablet-width) {
-    left: -48px;
-    top: 4px;
+    left: -46px;
+    top: 5px;
     width: 18px;
-    height: 14px;
+    height: 11px;
   }
 }
 
