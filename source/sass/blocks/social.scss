@@ -4,18 +4,25 @@
   justify-content: center;
   align-items: center;
   margin: 20px;
+  padding-left: 30px;
 
   @media (min-width: $tablet-width) {
     margin: 0;
-    margin-left: 30px;
+    margin-left: 45px;
+    padding: 0;
   }
 }
 
 .social__item {
-  margin: 0 17px;
+  // margin: 0 20px;
+  padding-right: 39px;
+  padding-top: 2px;
+
 
   @media (min-width: $tablet-width) {
-    margin: 0 12px;
+    margin: 0;
+    padding-right: 28px;
+    padding-top: 5px;
   }
 }
 
@@ -45,18 +52,13 @@
   }
 
   &--facebook .social__link-icon {
-    fill: none;
-    stroke: $special-grey;
+    width: 10px;
+    height: 18px;
 
     @media (min-width: $tablet-width) {
-      width: 28px;
-      height: 33px;
+      width: 13px;
+      height: 27px;
     }
-  }
-
-  &--facebook:hover .social__link-icon {
-    fill: none;
-    stroke: $basic-font;
   }
 }
 
