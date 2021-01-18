@@ -7,7 +7,7 @@
   align-items: center;
 
   @media (min-width: $tablet-width) {
-    padding: 5px 0;
+    padding: 6px 0;
     gap: 66px;
   }
 
@@ -32,7 +32,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 475px;
+    width: 478px;
   }
 }
 
@@ -64,7 +64,7 @@
         content: "";
         position: absolute;
         right: 0;
-        bottom: 9px;
+        bottom: 12px;
         left: 0;
         height: 2px;
         background: $basic-font;

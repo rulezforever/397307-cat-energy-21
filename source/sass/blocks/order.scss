@@ -2,7 +2,7 @@
   margin-bottom: 32px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 60px;
+    margin-bottom: 57px;
   }
 
   @media (min-width: $desktop-width) {
@@ -98,7 +98,7 @@
     }
 
     @media (min-width: $tablet-width) {
-      margin-bottom: 100px;
+      margin-bottom: 98px;
       padding-top: 5px;
       padding-bottom: 6px;
       width: 100%;
@@ -122,7 +122,7 @@
     border-image: linear-gradient(to right, transparent 50%, $basic-font 50%) 1 0%;
 
     @media (min-width: $tablet-width) {
-      margin-bottom: 64px;
+      margin-bottom: 68px;
       border-top: 2px solid $basic-font;
       border-image: none;
     }
@@ -159,7 +159,7 @@
     @media (min-width: $tablet-width) {
       border-top: 2px solid $basic-font;
       border-image: none;
-      margin-bottom: 36px;
+      margin-bottom: 38px;
     }
 
     @media (min-width: $desktop-width) {
@@ -221,6 +221,11 @@
   background-color: $white;
   box-shadow: 0 0 0 1px $border-grey3;
 
+  &:focus + label::before {
+    box-shadow: 0 0 0 1px $hover-grey;
+    outline: 2px solid black;
+  }
+
   @media (min-width: $tablet-width) {
     border: 11px solid $white;
     width: 40px;
@@ -238,12 +243,12 @@
   opacity: 0.3;
 }
 
-.order__radio + label:focus::before {
-  box-shadow: 0 0 0 1px $hover-grey;
+.order__radio:focus + label::before {
+  outline: 2px solid black;
 }
 
-.order__check + label:focus::before {
-  box-shadow: 0 0 0 1px $hover-grey;
+.order__check:focus + label::before {
+  outline: 2px solid black;
 }
 
 .order__input {
@@ -257,6 +262,8 @@
 
   @media (min-width: $tablet-width) {
     height: 52px;
+    padding-left: 18px;
+    margin-left: 20px;
   }
 
   &:hover {
@@ -376,7 +383,7 @@
     width: 201px;
 
     @media (min-width: $tablet-width) {
-      margin-bottom: 55px;
+      margin-bottom: 51px;
       width: 552px;
       transform: translate(-40px, -24px);
       padding-left: 40px;
