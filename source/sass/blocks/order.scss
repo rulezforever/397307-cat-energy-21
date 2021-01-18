@@ -49,6 +49,7 @@
     margin-bottom: 8px;
     padding-bottom: 8px;
     position: relative;
+    width: 100%;
 
     &::after {
       content: "";
@@ -179,8 +180,6 @@
 }
 
 .order__radio {
-  display: none;
-
   @media (min-width: $tablet-width) {
     margin-top: 13px;
   }
@@ -221,11 +220,6 @@
   background-color: $white;
   box-shadow: 0 0 0 1px $border-grey3;
 
-  &:focus + label::before {
-    box-shadow: 0 0 0 1px $hover-grey;
-    outline: 2px solid black;
-  }
-
   @media (min-width: $tablet-width) {
     border: 11px solid $white;
     width: 40px;
@@ -244,11 +238,11 @@
 }
 
 .order__radio:focus + label::before {
-  outline: 2px solid black;
+  outline: 2px solid $black;
 }
 
 .order__check:focus + label::before {
-  outline: 2px solid black;
+  outline: 1px solid $black;
 }
 
 .order__input {
@@ -453,10 +447,6 @@
   position: relative;
   cursor: pointer;
   outline: none;
-}
-
-.order__check {
-  display: none;
 }
 
 .order__check:checked + label::before {
