@@ -270,10 +270,10 @@
   font-family: $primary-font;
   text-transform: uppercase;
   border: none;
+  background-color: transparent;
 
   @media (min-width: $tablet-width) {
     @include font-set(20px, 30px);
-    background-color: transparent;
     border-bottom: 1px dotted $border-grey3;
   }
 
