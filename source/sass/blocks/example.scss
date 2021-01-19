@@ -271,14 +271,25 @@
   text-transform: uppercase;
   border: none;
   background-color: transparent;
+  outline: none;
+  cursor: pointer;
+  border-bottom: 1px dotted $border-grey3;
+
 
   @media (min-width: $tablet-width) {
     @include font-set(20px, 30px);
-    border-bottom: 1px dotted $border-grey3;
   }
 
   @media (min-width: $desktop-width) {
     margin-right: 20px;
+  }
+
+  &:hover {
+    border-bottom: 1px solid rgba($black, 0.4);
+  }
+
+  &:active {
+    border-bottom: none;
   }
 
   &--after {
