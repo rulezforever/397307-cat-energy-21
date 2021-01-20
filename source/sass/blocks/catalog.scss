@@ -342,8 +342,7 @@
   }
 }
 
-.catalog__image:nth-child(3),
-.catalog__image:nth-child(6) {
+.catalog__item:nth-child(odd):not(:first-child) .catalog__image {
   padding-top: 18px;
 
   @media (min-width: $tablet-width) {
