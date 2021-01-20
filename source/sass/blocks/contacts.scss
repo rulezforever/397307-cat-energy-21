@@ -48,15 +48,15 @@
     @include font-set(16px, 20px);
     text-align: right;
     width: 160px;
-    padding-top: 0;
+    padding-top: 4px;
     margin: 0;
     margin-top: -5px;
-    line-height: 1.5;
+    line-height: 21px;
   }
 
   @media (min-width: $desktop-width) {
     text-align: left;
-    margin-right: 15px;
+    margin-right: 9px;
   }
 }
 
@@ -69,14 +69,22 @@
   @media (min-width: $tablet-width) {
     justify-content: space-between;
     align-items: center;
-    padding: 65px 40px;
+    padding: 65px 40px 57px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 65px 75px;
+    // padding: 65px 75px;
+    padding: 65px 75px 57px;
     position: absolute;
     background-color: $white;
     top: 92px;
     width: 420px;
+  }
+}
+
+.contacts__city {
+  @media (min-width: $tablet-width) {
+    display: block;
+    padding-top: 18px;
   }
 }

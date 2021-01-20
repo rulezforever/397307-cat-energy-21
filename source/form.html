@@ -65,15 +65,15 @@
         <fieldset class="order__item order__item--service">
           <ul class="order__list order__list--radio">
             <li class="order__group">
-              <input class="order__radio" type="radio" name="program" value="slim" id="slim" checked>
+              <input class="order__radio visually-hidden" type="radio" name="program" value="slim" id="slim" checked>
               <label class="order__radio-label" for="slim">Похудение</label>
             </li>
             <li class="order__group">
-              <input class="order__radio" type="radio" name="program" value="weight" id="weight">
+              <input class="order__radio visually-hidden" type="radio" name="program" value="weight" id="weight">
               <label class="order__radio-label" for="weight">Набор массы</label>
             </li>
             <li class="order__group">
-              <input class="order__radio" type="radio" name="program" value="advice" id="advice">
+              <input class="order__radio visually-hidden" type="radio" name="program" value="advice" id="advice">
               <label class="order__radio-label" for="advice">Не знаю (нужен ваш совет)</label>
             </li>
           </ul>
@@ -82,7 +82,7 @@
       <fieldset class="order__item order__item--owner">
         <div class="order__wrapper wrapper wrapper--form">
           <h2 class="order__title order__title--owner">Контактные данные (владельца кота)</h2>
-          <div class="order__wrapper--owner">
+          <div class="order__wrapper order__wrapper--owner">
             <p class="order__group">
               <label class="order__input-label" for="email">E-mail:<sup>*</sup>
                 <input class="order__input" id="email" type="email" name="email" placeholder="kuklachev@gmail.com"
@@ -118,19 +118,19 @@
           <h2 class="order__title order__title--extra">Дополнительно</h2>
           <ul class="order__list order__list--checkbox">
             <li class="order__group">
-              <input class="order__check" type="checkbox" name="sweetener" id="sweetener" checked>
+              <input class="order__check visually-hidden" type="checkbox" name="sweetener" id="sweetener" checked>
               <label class="order__check-label" for="sweetener" tabindex="0">Сахарозаменитель</label>
             </li>
             <li class="order__group">
-              <input class="order__check" type="checkbox" name="water" id="water">
+              <input class="order__check visually-hidden" type="checkbox" name="water" id="water">
               <label class="order__check-label" for="water" tabindex="0">Питьевая вода</label>
             </li>
             <li class="order__group">
-              <input class="order__check" type="checkbox" name="milk" id="milk">
+              <input class="order__check visually-hidden" type="checkbox" name="milk" id="milk">
               <label class="order__check-label" for="milk" tabindex="0">Молоко</label>
             </li>
             <li class="order__group">
-              <input class="order__check" type="checkbox" name="vitamins" id="vitamins">
+              <input class="order__check visually-hidden" type="checkbox" name="vitamins" id="vitamins">
               <label class="order__check-label" for="vitamins" tabindex="0">Витамины</label>
             </li>
           </ul>
@@ -149,7 +149,7 @@
         <h2 class="visually-hidden">Контакты</h2>
         <div class="contacts__info">
           <p class="contacts__invite">Приглашаем <br>к сотрудничеству дилеров!</p>
-          <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+          <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 <span class="contacts__city">Санкт-Петербург</span></p>
         </div>
       </div>
     </section>

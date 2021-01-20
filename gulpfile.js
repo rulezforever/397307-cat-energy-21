@@ -13,8 +13,6 @@ const imagemin = require("gulp-imagemin");
 const webp = require("gulp-webp");
 const svgstore = require("gulp-svgstore");
 const del = require("del");
-const gcmq = require('gulp-group-css-media-queries');
-const mqpacker = require("css-mqpacker");
 
 // Styles
 
@@ -26,9 +24,6 @@ const styles = () => {
     .pipe(gulp.dest("build/css"))
     .pipe(postcss([
       autoprefixer(),
-      // mqpacker({
-      //   sort: true
-      // }),
       csso()
     ]))
     .pipe(rename({
