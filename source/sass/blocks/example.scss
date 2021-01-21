@@ -184,6 +184,10 @@
   display: grid;
   grid-column: 1 / -1;
   grid-row: 1 / -1;
+
+  @media (min-width: $desktop-width) {
+    width: 51vw;
+  }
 }
 
 .example__picture {
@@ -258,9 +262,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 100%;
+    width: auto;
     height: 520px;
-    margin-left: -1px;
+    margin-left: 64px;
     margin-top: 0;
   }
 }
@@ -284,18 +288,32 @@
     margin-right: 20px;
   }
 
-  &:hover {
+  &:hover,
+  &:focus {
     border-bottom: 1px solid rgba($black, 0.4);
   }
 
   &:active {
-    border-bottom: none;
+    border-color: transparent;
   }
 
   &--after {
+    padding-left: 0;
+    padding-right: 0;
+
     @media (min-width: $desktop-width) {
-      margin-left: 10px;
+      margin-left: 19px;
       margin-right: 0;
+    }
+  }
+
+  &--before {
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 5px;
+
+    @media (min-width: $desktop-width) {
+      margin-left: 7px;
     }
   }
 }
@@ -363,14 +381,14 @@
 .example__slider {
   display: flex;
   justify-content: space-between;
-  padding: 0 35px;
+  padding: 0 39px;
   margin-bottom: 34px;
 
   @media (min-width: $tablet-width) {
-    padding: 0 63px;
+    padding: 0 66px;
     align-items: center;
     margin-bottom: 55px;
-    transform: translateY(-14px);
+    transform: translateY(-11px);
     position: relative;
     z-index: 10;
   }
@@ -379,10 +397,11 @@
     margin-top: 548px;
     margin-bottom: 70px;
     padding: 0;
-    padding-left: 98px;
+    padding-left: 101px;
     transform: translateX(-52px);
     grid-column: 1 / -1;
     grid-row: 1 / -1;
+    justify-content: unset;
   }
 }
 
