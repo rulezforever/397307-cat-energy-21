@@ -6,10 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
   <link href="css/style.min.css" rel="stylesheet">
-  <link rel="preload" href="fonts/oswaldregular.woff2" as="font">
-  <link rel="preload" href="fonts/oswaldregular.woff" as="font">
-  <link rel="preload" href="fonts/oswaldmedium.woff2" as="font">
-  <link rel="preload" href="fonts/oswaldmedium.woff" as="font">
+  <link rel="preload" href="fonts/oswaldregular.woff2" as="font" crossorigin>
+  <link rel="preload" href="fonts/oswaldmedium.woff2" as="font" crossorigin>
 </head>
 
 <body class="page__body">
@@ -145,11 +143,11 @@
           </div>
           </div>
           <div class="example__slider">
-            <button class="example__button example__button--before" type="button" aria-label="before">Было</button>
+            <button class="example__button example__button--before" type="button" aria-label="before" tabindex="0">Было</button>
             <div class="example__bar">
-              <div class="example__toggle"></div>
+              <div class="example__toggle" tabindex="0"></div>
             </div>
-            <button class="example__button example__button--after" type="button" aria-label="after">Стало</button>
+            <button class="example__button example__button--after" type="button" aria-label="after" tabindex="0">Стало</button>
           </div>
         </div>
       </div>
