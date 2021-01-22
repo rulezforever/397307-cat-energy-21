@@ -436,6 +436,7 @@
   margin-top: 15px;
   margin-bottom: 13px;
   width: 275px;
+  border: 1px solid $border-grey2;
 
   @media (min-width: $tablet-width) {
     width: 610px;
